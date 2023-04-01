@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import Head from 'next/head'
-import Timer3d, { TimeToDateLabels } from '../components/Specials/Timer3d'
+import { TimeToDateLabels } from '../components/Specials/Timer3d'
 import ContactOne from '../components/Contacts/ContactOne'
 import Modal from '../components/Modals/ModalOne'
-import slinc from '../resource/icons/slinc.png'
+import product from '../resource/icons/product.png'
+import HeroTwo from '../components/Heros/HeroTwo'
+import backgroundHero from '../resource/bg/doctor.jpg'
 
 const labelsTimer: TimeToDateLabels = {
   days: 'Días',
@@ -12,7 +14,10 @@ const labelsTimer: TimeToDateLabels = {
   minutes: 'Minutos',
   seconds: 'Segundos'
 }
-
+const descriptionHero =
+  'Dioxil es un complejo de extractos naturales, que por su acción ayuda a prevenir las deficiencias visuales. Es un producto único que afecta al funcionamiento de los músculos del globo ocular, lo que ayuda a restablecer el enfoque normal y devolver una visión clara, nítida y voluminosa..'
+const titleHero = 'Dioxil'
+const buttonHero = 'PEDIR DIOLIX'
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
   const [error, setError] = useState(false)
@@ -45,11 +50,12 @@ const Home: NextPage = () => {
         <meta name="description" content="Incasol" title="Incasol - cápsulas para la hipertensión Chile" />
       </Head>
       <>
+        <HeroTwo title={titleHero} description={descriptionHero} button={buttonHero} imageSrc={backgroundHero} />
         <ContactOne
           labelsTimer={labelsTimer}
           title="¡Atención! Promoción: ¡Obtenga un 50% de descuento!"
           price="34 990 CLP"
-          imageSrc={slinc}
+          imageSrc={product}
           imageAlt="Product"
           labelName="Nombre y apellidos*"
           labelPhone="Teléfono:*"
