@@ -7,17 +7,17 @@ type Features = {
   description: string
   imageSrc: StaticImageData
   imageAlt: string
+  openModal: (open: boolean) => void
 }
 
 type Props = {
   title: string
   buttonTitle: string
-  openModal: (open: boolean) => void
   features: Features[]
 }
 
 export default function FeatureSeven(props: Props) {
-  const { title, buttonTitle, features, openModal } = props
+  const { title, buttonTitle, features } = props
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -56,7 +56,7 @@ export default function FeatureSeven(props: Props) {
                     <div className="flex flex-1 flex-col justify-end">
                       <button
                         onClick={() => {
-                          openModal(true)
+                          features.openModal(true)
                         }}
                         className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-900 hover:bg-gray-800"
                       >
