@@ -11,10 +11,13 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "clsx": "^1.2.1",
+    "framer-motion": "^10.10.0",
+    "gsap": "^3.11.5",
     "luxon": "^3.3.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.3",
     "react-typewriter-effect": "^1.1.0",
     "typewriter-effect": "^2.19.0"
   },

@@ -7,6 +7,10 @@ import Modal from '../components/Modals/ModalOne'
 import product from '../resource/icons/product.png'
 import HeroTwo from '../components/Heros/HeroTwo'
 import backgroundHero from '../resource/bg/doctor.jpg'
+import ReviewsOne from '../components/Reviews/ReviewsOne'
+import face1 from '../resource/icons/face1.jpg'
+import face2 from '../resource/icons/face2.jpg'
+import face3 from '../resource/icons/face3.png'
 
 const labelsTimer: TimeToDateLabels = {
   days: 'Días',
@@ -14,9 +18,48 @@ const labelsTimer: TimeToDateLabels = {
   minutes: 'Minutos',
   seconds: 'Segundos'
 }
+const reviews = [
+  {
+    id: 1,
+    rating: 5,
+    content: `
+      <p>
+      Durante mucho tiempo no me decidía a pedir Zeaxan, pero después de leer sobre los efectos de los ingredientes en artículos médicos, dejé el pedido. Centro de llamadas rápido y eficaz, entrega gratuita, ¡pago después de recibir el producto! 
+      ¡Llevo tomándolo unas semanas y no he tardado en obtener resultados!</p>
+    `,
+    date: 'Febrero 20, 2023',
+    datetime: '2023-02-20',
+    author: 'Angela Chavez',
+    img: face3
+  },
+  {
+    id: 2,
+    rating: 5,
+    content: `
+      <p>
+      Hola a todos, este es mi primer comentario de este tipo. Trabajo como programador, últimamente mi vista se ha resentido mucho, me duelen mucho los ojos después del trabajo. Decidí que había que hacer algo al respecto, investigué un poco en internet y di con Zeaxan. Llevo un tiempo tomándolo y no te lo vas a creer, ¡el dolor ha desaparecido y mi visión está mejor enfocada! Si usted tiene este tipo de problema, esto es lo que necesita..</p>
+    `,
+    date: 'Febrero 12, 2023',
+    datetime: '2023-02-12',
+    author: 'Manuel Alvarez',
+    img: face1
+  },
+  {
+    id: 3,
+    rating: 5,
+    content: `
+      <p> A los 54 años, no esperaba que 1 cápsula al día pudiera hacer tanto para corregir mi vista</p>
+    `,
+    date: 'Diciembre 12, 2022',
+    datetime: '2022-12-12',
+    author: 'Salvador Garcia',
+    img: face2
+  }
+]
+const titleReviews = 'Opiniones de los clientes'
 const descriptionHero =
   'Dioxil es un complejo de extractos naturales, que por su acción ayuda a prevenir las deficiencias visuales. Es un producto único que afecta al funcionamiento de los músculos del globo ocular, lo que ayuda a restablecer el enfoque normal y devolver una visión clara, nítida y voluminosa..'
-const titleHero = 'Dioxil'
+const titleHero = 'Diolix - ¡La solución definitiva para la vista!'
 const buttonHero = 'PEDIR DIOLIX'
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -80,6 +123,7 @@ const Home: NextPage = () => {
           open={openModal}
           isLoading={isLoading}
         />
+        <ReviewsOne title={titleReviews} reviews={reviews} />
       </>
     </>
   )
