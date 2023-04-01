@@ -33,7 +33,7 @@ export default function ReviewsOne(props: Props) {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 variants={{
                   visible: { opacity: 1, y: 0 },
                   hidden: { opacity: 0, y: 100 }
