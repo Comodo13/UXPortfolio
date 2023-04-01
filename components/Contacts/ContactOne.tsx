@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { sendContactForm } from '../../lib/api'
-import Timer3d from '../Specials/Timer3d'
+import Timer3d, { TimeToDateLabels } from '../Specials/Timer3d'
 
 type Props = {
   title: string
@@ -12,6 +12,7 @@ type Props = {
   labelPhone: string
   placeholderName: string
   placeholderPhone: string
+  labelsTimer: TimeToDateLabels
   btnTitle: string
   patternEmail: string
   priceDiscount: string
@@ -36,7 +37,8 @@ export default function ContactOne(props: Props) {
     setOpen,
     setError,
     setIsLoading,
-    href
+    href,
+    labelsTimer
   } = props
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -80,7 +82,7 @@ export default function ContactOne(props: Props) {
             <div className="sm:col-span-8 lg:col-span-7">
               <div className="text-xl font-medium text-center text-gray-900 sm:pr-12">
                 <h2>{title}</h2>
-                <Timer3d />
+                <Timer3d labels={labelsTimer} />
                 <div className="flex justify-center">
                   <p className="text-red-500 line-through"> {priceDiscount}</p>
                   <p className="font-medium text-xl"> / </p>

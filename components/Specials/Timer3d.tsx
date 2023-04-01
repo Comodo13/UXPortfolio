@@ -5,6 +5,17 @@ import { DateTime } from 'luxon'
 import Timer3dCard from './Timer3dCard'
 import useIsMounted from '../hooks/UseIsMounted'
 
+export type TimeToDateLabels = {
+  days: string
+  hours: string
+  minutes: string
+  seconds: string
+}
+
+type Props = {
+  labels: TimeToDateLabels
+}
+
 type CurrentPrevious = {
   current: Countdown
   previous: Countdown | null
@@ -48,7 +59,8 @@ const useCountdown = (endDate: DateTime): CurrentPrevious => {
   return { previous, current }
 }
 
-const Timer3d = (): ReactElement => {
+const Timer3d = (props: Props): ReactElement => {
+  const { labels } = props
   const isMounted = useIsMounted()
   const router = useRouter()
   const defaultTime = useMemo(() => DateTime.local().plus({ days: 1, hours: 0, minutes: 0, seconds: 3 }), [])
@@ -63,28 +75,28 @@ const Timer3d = (): ReactElement => {
     <div className="flex space-x-1 justify-center my-2">
       <Timer3dCard
         id={`days${current.days}-${previous?.days}`}
-        label="DAYS"
+        label={labels.days}
         key={`days${current.days}-${previous?.days}`}
         current={current.days}
         previous={previous?.days}
       />
       <Timer3dCard
         id={`hours${current.hours}-${previous?.hours}`}
-        label="HOURS"
+        label={labels.hours}
         key={`hours${current.hours}-${previous?.hours}`}
         current={current.hours}
         previous={previous?.hours}
       />
       <Timer3dCard
         id={`minutes${current.minutes}-${previous?.minutes}`}
-        label="MINUTES"
+        label={labels.minutes}
         key={`minutes${current.minutes}-${previous?.minutes}`}
         current={current.minutes}
         previous={previous?.minutes}
       />
       <Timer3dCard
         id={`seconds${current.seconds}-${previous?.seconds}`}
-        label="SECONDS"
+        label={labels.seconds}
         key={`seconds${current.seconds}-${previous?.seconds}`}
         current={current.seconds}
         previous={previous?.seconds}

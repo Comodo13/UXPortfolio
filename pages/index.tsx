@@ -1,10 +1,17 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 import Head from 'next/head'
-import Timer3d from '../components/Specials/Timer3d'
+import Timer3d, { TimeToDateLabels } from '../components/Specials/Timer3d'
 import ContactOne from '../components/Contacts/ContactOne'
 import Modal from '../components/Modals/ModalOne'
 import slinc from '../resource/icons/slinc.png'
+
+const labelsTimer: TimeToDateLabels = {
+  days: 'Días',
+  hours: 'Horas',
+  minutes: 'Minutos',
+  seconds: 'Segundos'
+}
 
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -39,6 +46,7 @@ const Home: NextPage = () => {
       </Head>
       <>
         <ContactOne
+          labelsTimer={labelsTimer}
           title="¡Atención! Promoción: ¡Obtenga un 50% de descuento!"
           price="34 990 CLP"
           imageSrc={slinc}
