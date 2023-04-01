@@ -11,6 +11,11 @@ import ReviewsOne from '../components/Reviews/ReviewsOne'
 import face1 from '../resource/icons/face1.jpg'
 import face2 from '../resource/icons/face2.jpg'
 import face3 from '../resource/icons/face3.png'
+import FeatureThree from '../components/Features/FeatureThree'
+import featureIconThour from '../resource/icons/amarant.jpeg'
+import featureIconTwo from '../resource/icons/obl.jpg'
+import featureIconOne from '../resource/icons/tmin.jpg'
+import featureIconThree from '../resource/icons/boyar.jpg'
 
 const labelsTimer: TimeToDateLabels = {
   days: 'Días',
@@ -61,6 +66,47 @@ const descriptionHero =
   'Dioxil es un complejo de extractos naturales, que por su acción ayuda a prevenir las deficiencias visuales. Es un producto único que afecta al funcionamiento de los músculos del globo ocular, lo que ayuda a restablecer el enfoque normal y devolver una visión clara, nítida y voluminosa..'
 const titleHero = 'Diolix - ¡La solución definitiva para la vista!'
 const buttonHero = 'PEDIR DIOLIX'
+
+const titleFeature = 'Composición de Incasol:'
+const featureProduct = [
+  {
+    name: 'Extracto de Comino Negro',
+    description:
+      'Participa en el proceso de normalización de la tensión arterial. Establece los valores del nivel alcanzado. Controla el curso de los procesos biológicos en el organismo que impiden la reaparición de una crisis hipertensiva.',
+    imageSrc: featureIconOne,
+    imageAlt: 'Comino Negro',
+    bgColor: 'black',
+    textColor: 'white'
+  },
+  {
+    name: 'Extracto de Espino Amarillo',
+    description:
+      'Previene la formación de coágulos en los vasos sanguíneos del organismo. Neutraliza el riesgo de obstrucción de los conductos de las venas.',
+    imageSrc: featureIconTwo,
+    imageAlt: 'Espino Amarillo',
+    bgColor: 'white',
+    textColor: 'black'
+  },
+  {
+    name: 'Extracto de espino blanco',
+    description:
+      'Este ingrediente tiene un efecto calmante. Ante situaciones de estrés, el organismo deja de reaccionar con un aumento de la tensión arterial.',
+    imageSrc: featureIconThree,
+    imageAlt: 'Extracto de espino blanco',
+    bgColor: 'white',
+    textColor: 'black'
+  },
+  {
+    name: 'Extracto de semillas de amaranto',
+    description:
+      'Limpia la estructura sanguínea de acumulaciones nocivas de toxinas e impurezas. Las partículas insalubres se acumulan en la estructura de los órganos internos como resultado del tabaquismo, el abuso del alcohol.',
+    imageSrc: featureIconThour,
+    imageAlt: 'Extracto de semillas de amaranto',
+    bgColor: 'white',
+    textColor: 'black'
+  }
+]
+
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
   const [error, setError] = useState(false)
@@ -123,6 +169,7 @@ const Home: NextPage = () => {
           open={openModal}
           isLoading={isLoading}
         />
+        <FeatureThree title={titleFeature} features={featureProduct} />
         <ReviewsOne title={titleReviews} reviews={reviews} />
       </>
     </>

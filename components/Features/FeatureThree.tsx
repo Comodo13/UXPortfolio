@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion'
 import Image, { StaticImageData } from 'next/image'
 
 type Feature = {
@@ -9,7 +10,7 @@ type Feature = {
 
 type Props = {
   title: string
-  description: string
+  description?: string
   features: Feature[]
 }
 
@@ -17,7 +18,11 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function ProductFeature(props: Props) {
+function isEven(n: number) {
+  return n % 2 == 0
+}
+
+export default function FeatureThree(props: Props) {
   const { features, title, description } = props
   return (
     <div className="bg-white">
@@ -28,32 +33,45 @@ export default function ProductFeature(props: Props) {
         </div>
 
         <div className="mt-16 space-y-16">
-          {features.map((feature, featureIdx) => (
-            <div
-              key={feature.name}
-              className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
-            >
-              <div
-                className={classNames(
-                  featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 xl:col-start-9',
-                  'mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4'
-                )}
+          <AnimatePresence>
+            {features.map((feature, featureIdx) => (
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: isEven(featureIdx) ? 200 : -200 }
+                }}
               >
-                <h3 className="text-xl font-medium text-black-900">{feature.name}</h3>
-                <p className="mt-2 text-m text-grey-700">{feature.description}</p>
-              </div>
-              <div
-                className={classNames(
-                  featureIdx % 2 === 0 ? 'lg:col-start-6 xl:col-start-5' : 'lg:col-start-1',
-                  'flex-auto lg:col-span-7 lg:row-start-1 xl:col-span-8'
-                )}
-              >
-                <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-                  <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                <div
+                  key={feature.name}
+                  className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
+                >
+                  <div
+                    className={classNames(
+                      featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 xl:col-start-9',
+                      'mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4'
+                    )}
+                  >
+                    <h3 className="text-xl font-medium text-black-900">{feature.name}</h3>
+                    <p className="mt-2 text-m text-grey-700">{feature.description}</p>
+                  </div>
+                  <div
+                    className={classNames(
+                      featureIdx % 2 === 0 ? 'lg:col-start-6 xl:col-start-5' : 'lg:col-start-1',
+                      'flex-auto lg:col-span-7 lg:row-start-1 xl:col-span-8'
+                    )}
+                  >
+                    <div className="aspect-w-5 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
+                      <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </div>

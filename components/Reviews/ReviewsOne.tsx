@@ -1,7 +1,6 @@
 import { StarIcon } from '@heroicons/react/20/solid'
 import { AnimatePresence, motion } from 'framer-motion'
 import Image, { StaticImageData } from 'next/image'
-import { useInView } from 'react-intersection-observer'
 
 type Review = {
   id: number
