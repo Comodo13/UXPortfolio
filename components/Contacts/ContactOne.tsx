@@ -1,18 +1,17 @@
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { sendContactForm } from '../../lib/api'
+import Timer3d from '../Specials/Timer3d'
 
 type Props = {
   title: string
   price: string
   imageSrc: StaticImageData
   imageAlt: string
-  labelMail: string
   labelName: string
   labelPhone: string
   placeholderName: string
   placeholderPhone: string
-  placeholderEmail: string
   btnTitle: string
   patternEmail: string
   priceDiscount: string
@@ -29,10 +28,8 @@ export default function ContactOne(props: Props) {
     price,
     imageSrc,
     imageAlt,
-    labelMail,
     labelName,
     labelPhone,
-    // placeholderEmail,
     placeholderName,
     placeholderPhone,
     btnTitle,
@@ -81,18 +78,15 @@ export default function ContactOne(props: Props) {
               <Image src={imageSrc} alt={imageAlt} className="object-cover object-center" />
             </div>
             <div className="sm:col-span-8 lg:col-span-7">
-              <div className="text-xl font-medium text-gray-900 sm:pr-12">
+              <div className="text-xl font-medium text-center text-gray-900 sm:pr-12">
                 <h2>{title}</h2>
-                <p className="text-red-500 line-through"> {priceDiscount}</p>
+                <Timer3d />
+                <div className="flex justify-center">
+                  <p className="text-red-500 line-through"> {priceDiscount}</p>
+                  <p className="font-medium text-xl"> / </p>
+                  <p className="font-medium text-xl text-green-500">{price}</p>
+                </div>
               </div>
-
-              <section aria-labelledby="information-heading" className="mt-1">
-                <h3 id="information-heading" className="sr-only">
-                  Product information
-                </h3>
-                <p className="font-medium text-xl text-green-500">{price}</p>
-              </section>
-
               <section aria-labelledby="options-heading" className="mt-8">
                 <h3 id="options-heading" className="sr-only">
                   Product options
@@ -133,23 +127,6 @@ export default function ContactOne(props: Props) {
                     className="min-w-0 w-full flex-auto my-1 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
                     placeholder={placeholderPhone}
                   />
-                  {/* <label htmlFor="email-address" className="block text-sm font-semibold leading-6 text-gray-900">
-                    {labelMail}
-                  </label> */}
-                  {/* <input
-                    id="email-address"
-                    name="email"
-                    type="email"
-                    value={email}
-                    onBlur={handleBlur}
-                    pattern={patternEmail}
-                    onChange={e => {
-                      setMail(e.target.value)
-                    }}
-                    autoComplete="email"
-                    className="min-w-0 w-full flex-auto my-1 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
-                    placeholder={placeholderEmail}
-                  /> */}
                   <button
                     type="submit"
                     className="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"

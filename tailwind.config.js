@@ -1,46 +1,79 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    letterSpacing: {
+      widest: '0.4em'
+    },
     screens: {
-      xs34: '340px',
-      xs38: '380px',
-      xs45: '450px',
-      xs56: '560px',
-      xs62: '620px',
-      xs68: '680px',
-      xs85: '850px',
-      xs90: '900px',
       sm: '480px',
       md: '768px',
       lg: '976px',
       xs1200: '1200px',
-      xl: '1440px',
+      xl: '1440px'
     },
     extend: {
-      colors: {
-        brightRed: 'hsl(12, 88%, 59%)',
-        brightRedLight: 'hsl(12, 88%, 69%)',
-        brightRedSupLight: 'hsl(12, 88%, 95%)',
-        darkBlue: 'hsl(228, 39%, 23%)',
-        darkGrayishBlue: 'hsl(227, 12%, 61%)',
-        veryDarkBlue: 'hsl(233, 12%, 13%)',
-        veryPaleRed: 'hsl(13, 100%, 96%)',
-        veryLightGray: 'hsl(0, 0%, 98%)',
+      animation: {
+        flipTop: 'flipTop 1s ease-in',
+        flipBottom: 'flipBottom 1s ease-in'
       },
-    },
+      colors: {
+        theme_grayishBlue: 'hsl(237, 18%, 59%)',
+        theme_softRed: 'hsl(345, 95%, 68%)',
+        theme_white: 'hsl(0, 0%, 100%)',
+        theme_darkDesaturatedBlue: 'hsl(236, 21%, 26%)',
+        theme_veryDarkBlue: 'hsl(235, 16%, 14%)',
+        theme_veryDarkMostlyBlackBlue: 'hsl(234, 17%, 12%)'
+      },
+      fontSize: {
+        xxs: '0.5rem'
+      },
+      keyframes: {
+        flipTop: {
+          '0%': { transform: 'rotateX(0deg)' },
+          '100%': { transform: 'rotateX(-180deg)' }
+        },
+        flipBottom: {
+          '0%': { transform: 'rotateX(180deg)' },
+          '100%': { transform: 'rotateX(0deg)' }
+        }
+      }
+    }
   },
   plugins: [
-    require('@tailwindcss/forms')(
-      {
-        strategy: 'class',
-      }
-    ),
+    require('@tailwindcss/forms')({
+      strategy: 'class'
+    }),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
-  ],
+    plugin(({ addVariant, e }) => {
+      addVariant('after', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.${e(`after${separator}${className}`)}::after`
+        })
+      })
+    }),
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        '.brightness-80': {
+          filter: 'brightness(80%)'
+        },
+        '.backface-hidden': {
+          backfaceVisibility: 'hidden'
+        },
+        '.preserve-3d': {
+          'transform-style': 'preserve-3d'
+        },
+        '.perspective': {
+          'perspective-origin': '50% 50%',
+          perspective: '450px'
+        },
+        '.bg-x-82': {
+          'background-position-x': '82%'
+        }
+      }
+      addUtilities(newUtilities)
+    })
+  ]
 }
