@@ -16,6 +16,8 @@ import featureIconThour from '../resource/icons/amarant.jpeg'
 import featureIconTwo from '../resource/icons/obl.jpg'
 import featureIconOne from '../resource/icons/tmin.jpg'
 import featureIconThree from '../resource/icons/boyar.jpg'
+import FeatureSeven from '../components/Features/FeatureSeven'
+import ModalInfo from '../components/Modals/ModalInfo'
 
 const labelsTimer: TimeToDateLabels = {
   days: 'Días',
@@ -107,8 +109,29 @@ const featureProduct = [
   }
 ]
 
+const featuresSeven = [
+  {
+    id: 1,
+    name: 'Basic Tee 8-Pack',
+    description: 'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
+    imageSrc: featureIconOne,
+    imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.'
+  },
+  {
+    id: 2,
+    name: 'Basic Tee',
+    description: 'Look like a visionary CEO and wear the same black t-shirt every day.',
+    imageSrc: featureIconTwo,
+    imageAlt: 'Front of plain black t-shirt.'
+  }
+]
+
+const titleFeatureSeven = 'Incasol - ¿Cómo funciona?'
+const buttonFeatureSeven = 'Comprar Incasol'
+
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
+  const [openModalInfo, setOpenModalInfo] = useState(false)
   const [error, setError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   return (
@@ -171,6 +194,21 @@ const Home: NextPage = () => {
         />
         <FeatureThree title={titleFeature} features={featureProduct} />
         <ReviewsOne title={titleReviews} reviews={reviews} />
+        <FeatureSeven
+          title={titleFeatureSeven}
+          buttonTitle={buttonFeatureSeven}
+          features={featuresSeven}
+          openModal={setOpenModalInfo}
+        />
+        <ModalInfo
+          setOpen={setOpenModalInfo}
+          title="helllooo"
+          open={openModalInfo}
+          buttonTitle="close"
+          description="jhgkhgkgkjgkjgkjgjkgjkgkgkgkgbkgbkkg"
+          imageSrc={product}
+          imageAlt="hell"
+        />
       </>
     </>
   )

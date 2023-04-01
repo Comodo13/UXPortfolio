@@ -41,8 +41,8 @@ export default function FeatureThree(props: Props) {
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 variants={{
-                  visible: { opacity: 1, x: 0 },
-                  hidden: { opacity: 0, x: isEven(featureIdx) ? 200 : -200 }
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: isEven(featureIdx) ? 200 : -200 }
                 }}
               >
                 <div
