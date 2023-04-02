@@ -29,6 +29,7 @@ export default function FeatureSeven(props: Props) {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
+                key={features.id}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 variants={{

@@ -8,7 +8,7 @@ type Incentive = {
 type Props = {
   incentives: Incentive[]
 }
-export default function Delivery(props: Props) {
+export default function ServiceTwo(props: Props) {
   const { incentives } = props
 
   return (

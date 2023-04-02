@@ -38,6 +38,7 @@ export default function FeatureThree(props: Props) {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
+                key={feature.name}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
                 variants={{
