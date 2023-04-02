@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import ContactOne from '../components/Contacts/ContactOne'
 import Modal from '../components/Modals/ModalOne'
@@ -14,7 +14,9 @@ import featureIconOne from '../resource/icons/tmin.jpg'
 import featureIconThree from '../resource/icons/boyar.jpg'
 import FeatureSeven from '../components/Features/FeatureSeven'
 import ModalInfo from '../components/Modals/ModalInfo'
+import Smartlook from 'smartlook-client'
 import FooterOne from '../components/Footers/FooterOne'
+
 import {
   labelsTimer,
   featureProduct,
@@ -38,6 +40,9 @@ const Home: NextPage = () => {
   const [openModalInfoFour, setOpenModalInfoFour] = useState(false)
   const [error, setError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  useEffect(() => {
+    Smartlook.init('e0cd33e3b82bae795b7c853978b6020466dd92a4')
+  }, [])
   const featuresSeven = [
     {
       id: 1,
