@@ -57,9 +57,9 @@ export const reviews = [
 ]
 export const titleReviews = 'Opiniones de los clientes'
 export const descriptionHero =
-  'Dioxil es un complejo de extractos naturales, que por su acción ayuda a prevenir las deficiencias visuales. Es un producto único que afecta al funcionamiento de los músculos del globo ocular, lo que ayuda a restablecer el enfoque normal y devolver una visión clara, nítida y voluminosa..'
+  'Diolix es un 100% natural gotas para la diabetes. Seguro a cualquier edad. Restaura la sensibilidad de las células a la insulina, normaliza los niveles de azúcar en sangre, estimula la producción de hemoglobina y ayuda a transportar el oxígeno de los glóbulos rojos a los tejidos.*'
 export const titleHero = 'Diolix - ¡La solución definitiva para la vista!'
-export const buttonHero = 'PEDIR DIOLIX'
+export const buttonHero = 'COMPRAR AHORA'
 
 export const titleFeature = 'Composición de Incasol:'
 export const featureProduct = [

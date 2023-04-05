@@ -6,7 +6,7 @@ import Modal from '../components/Modals/ModalOne'
 import ServiceTwo from '../components/Services/ServiceTwo'
 import product from '../resource/icons/product.png'
 import HeroTwo from '../components/Heros/HeroTwo'
-import backgroundHero from '../resource/bg/doctor.jpg'
+import backgroundHero from '../resource/bg/doctor.png'
 import ReviewsOne from '../components/Reviews/ReviewsOne'
 import FeatureThree from '../components/Features/FeatureThree'
 import featureIconTwo from '../resource/icons/obl.jpg'
@@ -46,29 +46,45 @@ const Home: NextPage = () => {
   const featuresSeven = [
     {
       id: 1,
-      name: 'Basic Tee 8-Pack',
-      description: 'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
+      name: 'Przeciążony układ nerwowy(stres, bezsenność itp.)',
+      description: 'Ultra Cardio X łagodzi niepokój dzięki kobalaminie oraz wyciągom z korzenia waleriany i owoców głogu.*.',
       imageSrc: featureIconOne,
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
       openModal: setOpenModalInfoOne
     },
     {
       id: 2,
-      name: 'Basic Tee',
-      description: 'Look like a visionary CEO and wear the same black t-shirt every day.',
+      name: 'Toksyny w naczyniach krwionośnych',
+      description: 'Ultra Cardio X poprawia pracę serca, działa przeciwzapalnie i odtruwa naczynia krwionośne dzięki ekstraktom z tiaminy i korzenia pokrzywy.*',
       imageSrc: featureIconTwo,
       imageAlt: 'Front of plain black t-shirt.',
       openModal: setOpenModalInfoTwo
     },
-
     {
       id: 3,
-      name: 'Basic Tee 8-Pack',
-      description: 'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
+      name: 'Nadwaga',
+      description: 'Ultra Cardio X wspomaga odchudzanie, poprawia trawienie, działa żółciopędnie, normalizuje metabolizm lipidów i obniża poziom cholesterolu we krwi dzięki wyciągowi z korzenia pokrzywy.*.',
+      imageSrc: featureIconTwo,
+      imageAlt: 'Front of plain black t-shirt.',
+      openModal: setOpenModalInfoTwo
+    },
+    {
+      id: 4,
+      name: 'Normalizuje ciśnienie krwi',
+      description: 'Działa kardiotonicznie i przeciwskurczowo, umiarkowanie obniża ciśnienie krwi, uspokaja układ nerwowy dzięki wyciągom z owoców i liści głogu.*',
       imageSrc: featureIconThree,
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
       openModal: setOpenModalInfoThree
-    }
+    },
+    {
+      id: 4,
+      name: 'Podwyższony poziom cukru we krwi',
+      description: 'Chlorofil obecny w pokrzywie działa stymulująco na układ odpornościowy, pomaga w gojeniu uszkodzonych tkanek i wspomaga wzrost włosów. Badania na zwierzętach wykazały, że napary z liści pokrzywy mogą obniżać poziom cukru u cukrzyków, podnosić poziom hemoglobiny i normalizować układ sercowo-naczyniowy.*',
+      imageSrc: featureIconThree,
+      imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
+      openModal: setOpenModalInfoThree
+    },
+
   ]
   return (
     <>
@@ -101,16 +117,16 @@ const Home: NextPage = () => {
         <HeroTwo title={titleHero} description={descriptionHero} button={buttonHero} imageSrc={backgroundHero} />
         <ContactOne
           labelsTimer={labelsTimer}
-          title="¡Atención! Promoción: ¡Obtenga un 50% de descuento!"
-          price="34 990 CLP"
+          title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
+          price="147 PLN"
           imageSrc={product}
           imageAlt="Product"
-          labelName="Nombre y apellidos*"
-          labelPhone="Teléfono:*"
-          placeholderName="Escribe tu nombre"
-          placeholderPhone="Ingrese su número de teléfono:"
-          priceDiscount="69 980 CLP"
-          btnTitle="¡Ordenar ahora!"
+          labelName="Imię*"
+          labelPhone="Telefon:*"
+          placeholderName="Wpisz swoją nazwę:"
+          placeholderPhone="Wpisz swój numer telefonu:"
+          priceDiscount="294 PLN"
+          btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
           setError={setError}
@@ -119,10 +135,10 @@ const Home: NextPage = () => {
         />
         <Modal
           modalTitleError={'Error'}
-          modalTitleSuccess={'Gracias por su consulta'}
-          button={'Gracias'}
-          modalSuccess={'Pronto nos pondremos en contacto.'}
-          modalError={'Gracias'}
+          modalTitleSuccess={'Dziękujemy za zapytanie'}
+          button={'Dziękuję'}
+          modalSuccess={'Wkrótce będziemy w kontakcie'}
+          modalError={'Dziękuję'}
           setOpen={setOpenModal}
           error={error}
           open={openModal}
