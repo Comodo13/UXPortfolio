@@ -114,7 +114,7 @@ export const featureProduct = [
 
 export const titleFeatureSeven = 'Incasol - ¿Cómo funciona?'
 export const buttonFeatureSeven = 'Comprar Incasol'
-export const textFooter = '2023 Ultra Cardio X w Polsce.'
+export const textFooter = '2023 Ultra Cardio X w Polsce'
 
 export const incentives = [
   {
