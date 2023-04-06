@@ -133,29 +133,29 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Incasol oficiale en Chile</title>
+        <title>Ultra Cardio X w Polsce</title>
         <meta
-          name="Incasol"
-          content="Incasol capsulas"
-          title="Incasol Capsulas en Perú.  comprar más barato - Incasol Chile. Envíos gratis . © Suplemento Nutricional Incasol 60 Capsulas ❤️"
+          name="Ultra Cardio X"
+          content="Kapsułki Ultra Cardio X"
+          title="Kapsułki Ultra Cardio X w Polsce.  kupować taniej - Ultra Cardio X w Polsce. bezpłatna wysyłka . © Nutritional Suplement 30 kapsułek ❤️"
         />
         <meta
-          name=" Incasol 60 Caps"
-          content="Incasol para la hipertensión: ¿funciona realmente? Descubre para qué sirve y el precio en la web oficial."
-          title="Comprar  Incasol 60 Caps barato. Precios, opiniones. ¡Ordene Incasol Ahora!"
+          name="Ultra Cardio X 30 kapsułek"
+          content="Ultra Cardio X na nadciśnienie: czy to naprawdę działa? Dowiedz się, co to jest dla i cena na oficjalnej stronie internetowej."
+          title="kupić Ultra Cardio X 30 kapsułek tanio."
         />
         <meta
-          name="Incasol"
-          content=" Incasol 60 Caps en Chile.Envíos gratis  © Incasol 60 Caps ❤️"
-          title="Incasol - cápsulas para la hipertensión Chile"
+          name="Ultra CardioX"
+          content=" Ultra CardioX 30 kapsułek w Polsce. bezpłatna wysyłka © Ultra CardioX 30 kapsułek ❤️"
+          title="Ultra CardioX - Kapsułki na nadciśnienie w Polsce"
         />
         <meta
-          name="Incasol"
-          content="Incasol en Chile"
-          title="Incasol
+          name="Ultra Cardio X"
+          content="Ultra Cardio X w Polsce"
+          title="Ultra Cardio X
           "
         />
-        <meta name="description" content="Incasol" title="Incasol - cápsulas para la hipertensión Chile" />
+        <meta name="description" content="Ultra Cardio X" title="Ultra Cardio X - Kapsułki na nadciśnienie w Polsce" />
       </Head>
       <>
         <HeroTwo title={titleHero} description={descriptionHero} button={buttonHero} imageSrc={backgroundHero} />
