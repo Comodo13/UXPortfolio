@@ -14,7 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     formData.append('phone', req.body.phone)
     formData.append('flow_hash', 'YucS')
     formData.append('referrer', 'google.ads.com')
-    formData.append('country', 'CL')
+    formData.append('country', 'PL')
 
     const request = await fetch('http://wapi.leadbit.com/api/pub/new-order/_642acc590012f638185742', {
       method: 'POST',
