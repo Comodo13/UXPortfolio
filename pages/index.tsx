@@ -229,6 +229,7 @@ const Home: NextPage = () => {
           imageSrc={product}
           imageAlt="hell" */}
         {/* /> */}
+        <ServiceTwo incentives={incentives} />
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
@@ -247,7 +248,7 @@ const Home: NextPage = () => {
           setIsLoading={setIsLoading}
           href="contact"
         />
-        <ServiceTwo incentives={incentives} />
+    
         <FooterOne text={textFooter} />
       </>
     </>
