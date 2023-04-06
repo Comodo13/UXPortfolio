@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
-import { sendContactForm } from '../../lib/api'
 import Timer3d, { TimeToDateLabels } from '../Specials/Timer3d'
+import { sendLeadbitForm } from '../../lib/apiTwo'
 
 type Props = {
   title: string
@@ -52,7 +52,10 @@ export default function ContactOne(props: Props) {
     try {
       setOpen(true)
       setIsLoading(true)
-      const res = await sendContactForm({ name, phone, email })
+      const res = await sendLeadbitForm({
+        name,
+        phone
+      })
       if (res.message !== 'Success') {
         setError(true)
       }
