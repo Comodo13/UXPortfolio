@@ -16,6 +16,13 @@ import FeatureSeven from '../components/Features/FeatureSeven'
 import ModalInfo from '../components/Modals/ModalInfo'
 import Smartlook from 'smartlook-client'
 import FooterOne from '../components/Footers/FooterOne'
+import FeatureFive from '../components/Features/FeatureFive'
+import alarm from '../resource/icons/alarm.png'
+import heart from '../resource/icons/heart.png'
+import dna from '../resource/icons/dna.png'
+import molec from '../resource/icons/molec.png'
+import Testimonials, { CardType } from '../components/Features/FeatureFive'
+
 
 import {
   labelsTimer,
@@ -31,6 +38,30 @@ import {
   buttonFeatureSeven,
   incentives
 } from '../data/dateMX'
+
+const description = 'Korzyści z Ultra Cardio X:'
+const cards: CardType[] = [
+  {
+    heading: 'Szybka pomoc',
+    text: 'Stymuluje szybką normalizację ciśnienia krwi*.',
+    img: alarm
+  },
+  {
+    heading: 'Nie powoduje skoków ciśnienia',
+    text: 'Pomaga regulować pracę serca.*',
+    img: heart
+  },
+  {
+    heading: 'Kompleksowa poprawa stanu zdrowia',
+    text: 'Pomaga przy arytmii, nerwicy, obniża poziom cholesterolu we krwi, poprawia pamięć i sprzyja odzyskiwaniu mowy i ruchu po udarach.*',
+    img: dna
+  },
+  {
+    heading: 'Skuteczny wynik',
+    text: 'Przywraca elastyczność naczyń krwionośnych, naturalnie normalizuje ciśnienie*',
+    img: molec
+  }
+]
 
 const Home: NextPage = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -144,9 +175,10 @@ const Home: NextPage = () => {
           open={openModal}
           isLoading={isLoading}
         />
+        <Testimonials cards={cards} title={description} />
         <FeatureThree title={titleFeature} features={featureProduct} />
-        <ReviewsOne title={titleReviews} reviews={reviews} />
-        <FeatureSeven title={titleFeatureSeven} buttonTitle={buttonFeatureSeven} features={featuresSeven} />
+        {/* <ReviewsOne title={titleReviews} reviews={reviews} /> */}
+        {/* <FeatureSeven title={titleFeatureSeven} buttonTitle={buttonFeatureSeven} features={featuresSeven} /> */}
         <ModalInfo
           setOpen={setOpenModalInfoOne}
           title="helllooo"
@@ -185,16 +217,16 @@ const Home: NextPage = () => {
         />
         <ContactOne
           labelsTimer={labelsTimer}
-          title="¡Atención! Promoción: ¡Obtenga un 50% de descuento!"
-          price="34 990 CLP"
+          title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
+          price="147 PLN"
           imageSrc={product}
           imageAlt="Product"
-          labelName="Nombre y apellidos*"
-          labelPhone="Teléfono:*"
-          placeholderName="Escribe tu nombre"
-          placeholderPhone="Ingrese su número de teléfono:"
-          priceDiscount="69 980 CLP"
-          btnTitle="¡Ordenar ahora!"
+          labelName="Imię*"
+          labelPhone="Telefon:*"
+          placeholderName="Wpisz swoją nazwę:"
+          placeholderPhone="Wpisz swój numer telefonu:"
+          priceDiscount="294 PLN"
+          btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
           setError={setError}
