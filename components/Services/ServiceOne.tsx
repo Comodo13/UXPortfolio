@@ -21,7 +21,7 @@ export const OrderFlow = (props: Props) => {
     return (
       <div className="flex flex-col items-center" key={key}>
         <Image src={item.img} alt="ChitChat Logo" />
-        {item.title && <span className="font-bold text-center my-4 text-xl sm:text-xl text-black">{item.title}</span>}
+        {item.title && <span className="text-center my-4 text-lg sm:text-xl text-black">{item.title}</span>}
       </div>
     )
   }

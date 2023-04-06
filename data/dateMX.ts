@@ -118,22 +118,22 @@ export const textFooter = '2023 Ultra Cardio X w Polsce.'
 
 export const incentives = [
   {
-    name: 'Rellene el formulario en el sitio',
+    name: 'Wypełnij formularz',
     description: "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
     img: flo1
   },
   {
-    name: 'Un operador se pondrá en contacto con usted',
+    name: 'Operator skontaktuje się z Tobą',
     description: 'Our AI chat widget is powered by a naive series of if/else statements. Guaranteed to irritate.',
     img: flo2
   },
   {
-    name: 'Le enviaremos su paquete gratuitamente',
+    name: 'Darmowa dostawa',
     description: "Look how fast that cart is going. What does this mean for the actual experience? I don't know.",
     img: flo3
   },
   {
-    name: 'Pago solo después de recibir el producto',
+    name: 'Płatność tylko po otrzymaniu produktu',
     description: "Buy them for your friends, especially if they don't like our store. Free money for us, it's great.",
     img: flo4
   }

@@ -22,7 +22,10 @@ import heart from '../resource/icons/heart.png'
 import dna from '../resource/icons/dna.png'
 import molec from '../resource/icons/molec.png'
 import Testimonials, { CardType } from '../components/Features/FeatureFive'
-
+import ServiceOne from '../components/Services/ServiceOne'
+import pill1 from '../resource/icons/pill1.png'
+import pill2 from '../resource/icons/pill2.png'
+import pill3 from '../resource/icons/pill3.png'
 
 import {
   labelsTimer,
@@ -60,6 +63,16 @@ const cards: CardType[] = [
     heading: 'Skuteczny wynik',
     text: 'Przywraca elastyczność naczyń krwionośnych, naturalnie normalizuje ciśnienie*',
     img: molec
+  }
+]
+const flow = [
+  {
+    title: '1 kapsułka raz dziennie',
+    img: pill1
+  },
+  {
+    title: 'Zgodnie z instrukcją, przebieg leczenia wynosi 1 miesiąc*',
+    img: pill3
   }
 ]
 
@@ -177,6 +190,7 @@ const Home: NextPage = () => {
         />
         <Testimonials cards={cards} title={description} />
         <FeatureThree title={titleFeature} features={featureProduct} />
+        <ServiceOne flow={flow} title="Jak stosować Ultra Cardio X?" />
         {/* <ReviewsOne title={titleReviews} reviews={reviews} /> */}
         {/* <FeatureSeven title={titleFeatureSeven} buttonTitle={buttonFeatureSeven} features={featuresSeven} /> */}
         <ModalInfo
