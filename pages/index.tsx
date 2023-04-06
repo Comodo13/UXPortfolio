@@ -193,7 +193,7 @@ const Home: NextPage = () => {
         <ServiceOne flow={flow} title="Jak stosować Ultra Cardio X?" />
         {/* <ReviewsOne title={titleReviews} reviews={reviews} /> */}
         {/* <FeatureSeven title={titleFeatureSeven} buttonTitle={buttonFeatureSeven} features={featuresSeven} /> */}
-        <ModalInfo
+        {/* <ModalInfo
           setOpen={setOpenModalInfoOne}
           title="helllooo"
           open={openModalInfoOne}
@@ -227,8 +227,8 @@ const Home: NextPage = () => {
           buttonTitle="close"
           description="jhgkhgkgkjgkjgkjgjkgjkgkgkgkgbkgbkkg"
           imageSrc={product}
-          imageAlt="hell"
-        />
+          imageAlt="hell" */}
+        {/* /> */}
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
