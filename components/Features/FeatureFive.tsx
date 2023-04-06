@@ -17,7 +17,7 @@ export const Testimonials = (props: Props) => {
   const renderCard = (card: CardType) => {
     return (
       <div
-        className="flex flex-col md:mx-5 items-center p-6 rounded-lg bg-veryLightGray lg:flex lg:w-1/4 mx-0 mt-14"
+        className="flex flex-col md:mx-5 items-center p-6 rounded-lg bg-zinc-100 lg:flex lg:w-1/4 mx-0 mt-14"
         key={card.heading}
       >
         <div>

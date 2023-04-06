@@ -5,11 +5,13 @@ import flo4 from '../resource/icons/flo4.png'
 import face1 from '../resource/icons/face1.jpg'
 import face2 from '../resource/icons/face2.jpg'
 import face3 from '../resource/icons/face3.png'
-import featureIconThour from '../resource/icons/amarant.jpeg'
-import featureIconTwo from '../resource/icons/obl.jpg'
+import featureIconThour from '../resource/icons/toxic.jpg'
+import featureIconTwo from '../resource/icons/nadwaga.jpg'
 import featureIconOne from '../resource/icons/tmin.jpg'
-import featureIconThree from '../resource/icons/boyar.jpg'
+import featureIconThree from '../resource/icons/sugar.jpg'
 import { TimeToDateLabels } from '../components/Specials/Timer3d'
+import insomnia from '../resource/icons/insomnia.jpg'
+import krw from '../resource/icons/blood.jpg'
 
 export const labelsTimer: TimeToDateLabels = {
   days: 'Días',
@@ -61,41 +63,50 @@ export const descriptionHero =
 export const titleHero = 'Diolix - ¡La solución definitiva para la vista!'
 export const buttonHero = 'COMPRAR AHORA'
 
-export const titleFeature = 'Composición de Incasol:'
+export const titleFeature = 'Ultra Cardio X pomaga zapobiegać głównym przyczynom wysokiego ciśnienia krwi'
 export const featureProduct = [
   {
-    name: 'Extracto de Comino Negro',
+    name: 'Przeciążony układ nerwowy(stres, bezsenność itp.)',
     description:
-      'Participa en el proceso de normalización de la tensión arterial. Establece los valores del nivel alcanzado. Controla el curso de los procesos biológicos en el organismo que impiden la reaparición de una crisis hipertensiva.',
-    imageSrc: featureIconOne,
-    imageAlt: 'Comino Negro',
+      'Ultra Cardio X łagodzi niepokój dzięki kobalaminie oraz wyciągom z korzenia waleriany i owoców głogu.*',
+    imageSrc: insomnia,
+    imageAlt: 'Przeciążony układ nerwowy(stres, bezsenność itp.)',
     bgColor: 'black',
     textColor: 'white'
   },
   {
-    name: 'Extracto de Espino Amarillo',
+    name: 'Nadwaga',
     description:
-      'Previene la formación de coágulos en los vasos sanguíneos del organismo. Neutraliza el riesgo de obstrucción de los conductos de las venas.',
+      'Ultra Cardio X wspomaga odchudzanie, poprawia trawienie, działa żółciopędnie, normalizuje metabolizm lipidów i obniża poziom cholesterolu we krwi dzięki wyciągowi z korzenia pokrzywy.*',
     imageSrc: featureIconTwo,
-    imageAlt: 'Espino Amarillo',
+    imageAlt: 'Nadwaga',
     bgColor: 'white',
     textColor: 'black'
   },
   {
-    name: 'Extracto de espino blanco',
+    name: 'Podwyższony poziom cukru we krwi',
     description:
-      'Este ingrediente tiene un efecto calmante. Ante situaciones de estrés, el organismo deja de reaccionar con un aumento de la tensión arterial.',
+      'Chlorofil zawarty w pokrzywie działa stymulująco na układ odpornościowy i pomaga w gojeniu uszkodzonych tkanek. Badania na zwierzętach wykazały, że napary z liści pokrzywy mogą obniżać poziom cukru u diabetyków, zwiększać poziom hemoglobiny i normalizować funkcje układu krążenia.*',
     imageSrc: featureIconThree,
-    imageAlt: 'Extracto de espino blanco',
+    imageAlt: 'Podwyższony poziom cukru we krwi',
     bgColor: 'white',
     textColor: 'black'
   },
   {
-    name: 'Extracto de semillas de amaranto',
+    name: 'Toksyny w naczyniach krwionośnych',
     description:
-      'Limpia la estructura sanguínea de acumulaciones nocivas de toxinas e impurezas. Las partículas insalubres se acumulan en la estructura de los órganos internos como resultado del tabaquismo, el abuso del alcohol.',
+      'Ultra Cardio X poprawia pracę serca, działa przeciwzapalnie i odtruwa naczynia krwionośne dzięki ekstraktom z tiaminy i korzenia pokrzywy.*',
     imageSrc: featureIconThour,
-    imageAlt: 'Extracto de semillas de amaranto',
+    imageAlt: 'Toksyny w naczyniach krwionośnych',
+    bgColor: 'white',
+    textColor: 'black'
+  },
+  {
+    name: 'Normalizuje ciśnienie krwi',
+    description:
+      'Działa kardiotonicznie i przeciwskurczowo, umiarkowanie obniża ciśnienie krwi, uspokaja układ nerwowy dzięki wyciągom z owoców i liści głogu.*',
+    imageSrc: krw,
+    imageAlt: 'Normalizuje ciśnienie krwi',
     bgColor: 'white',
     textColor: 'black'
   }
@@ -103,7 +114,7 @@ export const featureProduct = [
 
 export const titleFeatureSeven = 'Incasol - ¿Cómo funciona?'
 export const buttonFeatureSeven = 'Comprar Incasol'
-export const textFooter = '2023 Dioxol en Mexico.'
+export const textFooter = '2023 Ultra Cardio X w Polsce.'
 
 export const incentives = [
   {
