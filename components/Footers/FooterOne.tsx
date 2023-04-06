@@ -26,7 +26,7 @@ export default function Footer(props: Props) {
           ))}
         </nav>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; {text} , (S.A.C.). Wszelkie prawa zastrzeżone.
+          &copy; {text} , (S.A.C.). Wszystkie prawa zastrzeżone.
         </p>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
         *DISCLAIMER: Ten produkt nie jest przeznaczony do zastąpienia profesjonalnej porady medycznej, diagnozy lub leczenia. Wszelkie pytania dotyczące stanu zdrowia należy zawsze konsultować z lekarzem lub innym wykwalifikowanym pracownikiem medycznym.
