@@ -14,10 +14,10 @@ import insomnia from '../resource/icons/insomnia.jpg'
 import krw from '../resource/icons/blood.jpg'
 
 export const labelsTimer: TimeToDateLabels = {
-  days: 'Días',
-  hours: 'Horas',
-  minutes: 'Minutos',
-  seconds: 'Segundos'
+  days: 'Dni',
+  hours: 'Godziny',
+  minutes: 'Minuty',
+  seconds: 'Sekundy'
 }
 export const reviews = [
   {
@@ -59,9 +59,9 @@ export const reviews = [
 ]
 export const titleReviews = 'Opiniones de los clientes'
 export const descriptionHero =
-  'Diolix es un 100% natural gotas para la diabetes. Seguro a cualquier edad. Restaura la sensibilidad de las células a la insulina, normaliza los niveles de azúcar en sangre, estimula la producción de hemoglobina y ayuda a transportar el oxígeno de los glóbulos rojos a los tejidos.*'
-export const titleHero = 'Diolix - ¡La solución definitiva para la vista!'
-export const buttonHero = 'COMPRAR AHORA'
+  'Pomaga szybko unormować ciśnienie krwi, reguluje pracę serca, pomaga oczyszczać naczynia krwionośne, pomaga przy dusznicy bolesnej, arytmii, nerwicy i poprawia pamięć.*'
+export const titleHero = 'Powiedz "nie" problemom z sercem!'
+export const buttonHero = 'Zamów teraz!'
 
 export const titleFeature = 'Ultra Cardio X pomaga zapobiegać głównym przyczynom wysokiego ciśnienia krwi'
 export const featureProduct = [
