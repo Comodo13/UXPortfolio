@@ -128,13 +128,9 @@ export const incentives = [
     img: flo2
   },
   {
-    name: 'Darmowa dostawa',
+    name: 'Dostawa 2-4 dni roboczych*',
     description: "Look how fast that cart is going. What does this mean for the actual experience? I don't know.",
     img: flo3
   },
-  {
-    name: 'Płatność tylko po otrzymaniu produktu',
-    description: "Buy them for your friends, especially if they don't like our store. Free money for us, it's great.",
-    img: flo4
-  }
+  
 ]
