@@ -11,6 +11,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "clsx": "^1.2.1",
+    "form-data": "^4.0.0",
     "framer-motion": "^10.10.0",
     "gsap": "^3.11.5",
     "luxon": "^3.3.0",
