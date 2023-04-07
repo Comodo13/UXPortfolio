@@ -21,7 +21,7 @@ export const Testimonials = (props: Props) => {
         key={card.heading}
       >
         <div>
-          <Image src={card.img} className="w-18 -mt-16" alt="" />
+          <Image src={card.img} className="w-auto -mt-14" alt="" />
         </div>
         <div>
           <h5 className="text-xl text-grey-900 font-bold">{card.heading}</h5>
