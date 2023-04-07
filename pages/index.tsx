@@ -168,14 +168,14 @@ const Home: NextPage = () => {
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
-          price="147 PLN"
+          price="147 Zł"
           imageSrc={product}
           imageAlt="Product"
           labelName="Imię*"
           labelPhone="Telefon:*"
           placeholderName="Wpisz swoje imię:"
           placeholderPhone="Wpisz swój numer telefonu:"
-          priceDiscount="294 PLN"
+          priceDiscount="294 Zł"
           btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
@@ -239,14 +239,14 @@ const Home: NextPage = () => {
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
-          price="147 PLN"
+          price="147 Zł"
           imageSrc={product}
           imageAlt="Product"
           labelName="Imię*"
           labelPhone="Telefon:*"
           placeholderName="Wpisz swoje Imię:"
           placeholderPhone="Wpisz swój numer telefonu:"
-          priceDiscount="294 PLN"
+          priceDiscount="294 Zł"
           btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
