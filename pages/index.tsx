@@ -39,8 +39,10 @@ import {
   descriptionHero,
   buttonHero,
   buttonFeatureSeven,
-  incentives
+  incentives,
+  descriptionCookie
 } from '../data/dateMX'
+import CookieOne from '../components/Banners/CookieOne'
 
 const description = 'Korzyści z Ultra Cardio X:'
 const cards: CardType[] = [
@@ -81,7 +83,7 @@ const Home: NextPage = () => {
   const [openModalInfoOne, setOpenModalInfoOne] = useState(false)
   const [openModalInfoTwo, setOpenModalInfoTwo] = useState(false)
   const [openModalInfoThree, setOpenModalInfoThree] = useState(false)
-  const [openModalInfoFour, setOpenModalInfoFour] = useState(false)
+  const [cookieModal, setCookieModal] = useState(true)
   const [error, setError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   useEffect(() => {
@@ -91,7 +93,8 @@ const Home: NextPage = () => {
     {
       id: 1,
       name: 'Przeciążony układ nerwowy(stres, bezsenność itp.)',
-      description: 'Ultra Cardio X łagodzi niepokój dzięki kobalaminie oraz wyciągom z korzenia waleriany i owoców głogu.*.',
+      description:
+        'Ultra Cardio X łagodzi niepokój dzięki kobalaminie oraz wyciągom z korzenia waleriany i owoców głogu.*.',
       imageSrc: featureIconOne,
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
       openModal: setOpenModalInfoOne
@@ -99,7 +102,8 @@ const Home: NextPage = () => {
     {
       id: 2,
       name: 'Toksyny w naczyniach krwionośnych',
-      description: 'Ultra Cardio X poprawia pracę serca, działa przeciwzapalnie i odtruwa naczynia krwionośne dzięki ekstraktom z tiaminy i korzenia pokrzywy.*',
+      description:
+        'Ultra Cardio X poprawia pracę serca, działa przeciwzapalnie i odtruwa naczynia krwionośne dzięki ekstraktom z tiaminy i korzenia pokrzywy.*',
       imageSrc: featureIconTwo,
       imageAlt: 'Front of plain black t-shirt.',
       openModal: setOpenModalInfoTwo
@@ -107,7 +111,8 @@ const Home: NextPage = () => {
     {
       id: 3,
       name: 'Nadwaga',
-      description: 'Ultra Cardio X wspomaga odchudzanie, poprawia trawienie, działa żółciopędnie, normalizuje metabolizm lipidów i obniża poziom cholesterolu we krwi dzięki wyciągowi z korzenia pokrzywy.*.',
+      description:
+        'Ultra Cardio X wspomaga odchudzanie, poprawia trawienie, działa żółciopędnie, normalizuje metabolizm lipidów i obniża poziom cholesterolu we krwi dzięki wyciągowi z korzenia pokrzywy.*.',
       imageSrc: featureIconTwo,
       imageAlt: 'Front of plain black t-shirt.',
       openModal: setOpenModalInfoTwo
@@ -115,7 +120,8 @@ const Home: NextPage = () => {
     {
       id: 4,
       name: 'Normalizuje ciśnienie krwi',
-      description: 'Działa kardiotonicznie i przeciwskurczowo, umiarkowanie obniża ciśnienie krwi, uspokaja układ nerwowy dzięki wyciągom z owoców i liści głogu.*',
+      description:
+        'Działa kardiotonicznie i przeciwskurczowo, umiarkowanie obniża ciśnienie krwi, uspokaja układ nerwowy dzięki wyciągom z owoców i liści głogu.*',
       imageSrc: featureIconThree,
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
       openModal: setOpenModalInfoThree
@@ -123,12 +129,12 @@ const Home: NextPage = () => {
     {
       id: 4,
       name: 'Podwyższony poziom cukru we krwi',
-      description: 'Chlorofil obecny w pokrzywie działa stymulująco na układ odpornościowy, pomaga w gojeniu uszkodzonych tkanek i wspomaga wzrost włosów. Badania na zwierzętach wykazały, że napary z liści pokrzywy mogą obniżać poziom cukru u cukrzyków, podnosić poziom hemoglobiny i normalizować układ sercowo-naczyniowy.*',
+      description:
+        'Chlorofil obecny w pokrzywie działa stymulująco na układ odpornościowy, pomaga w gojeniu uszkodzonych tkanek i wspomaga wzrost włosów. Badania na zwierzętach wykazały, że napary z liści pokrzywy mogą obniżać poziom cukru u cukrzyków, podnosić poziom hemoglobiny i normalizować układ sercowo-naczyniowy.*',
       imageSrc: featureIconThree,
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
       openModal: setOpenModalInfoThree
-    },
-
+    }
   ]
   return (
     <>
@@ -162,14 +168,14 @@ const Home: NextPage = () => {
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
-          price="147 PLN"
+          price="147 zł"
           imageSrc={product}
           imageAlt="Product"
           labelName="Imię*"
           labelPhone="Telefon:*"
           placeholderName="Wpisz swoje imię:"
           placeholderPhone="Wpisz swój numer telefonu:"
-          priceDiscount="294 PLN"
+          priceDiscount="294 zł"
           btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
@@ -233,14 +239,14 @@ const Home: NextPage = () => {
         <ContactOne
           labelsTimer={labelsTimer}
           title="Uwaga!! Promocja: skorzystaj z 50% rabatu!"
-          price="147 PLN"
+          price="147 zł"
           imageSrc={product}
           imageAlt="Product"
           labelName="Imię*"
           labelPhone="Telefon:*"
           placeholderName="Wpisz swoje Imię:"
           placeholderPhone="Wpisz swój numer telefonu:"
-          priceDiscount="294 PLN"
+          priceDiscount="294 zł"
           btnTitle="Zamów teraz!"
           patternEmail="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           setOpen={setOpenModal}
@@ -248,7 +254,13 @@ const Home: NextPage = () => {
           setIsLoading={setIsLoading}
           href="contact"
         />
-    
+        <CookieOne
+          cookieModal={cookieModal}
+          setCookieModal={setCookieModal}
+          description={descriptionCookie}
+          buttonTitle="Przyjmij wszystkie"
+          buttoneRejectTitle="Odrzucić wszystkie"
+        />
         <FooterOne text={textFooter} />
       </>
     </>

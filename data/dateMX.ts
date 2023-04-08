@@ -131,6 +131,9 @@ export const incentives = [
     name: 'Dostawa 2-4 dni roboczych*',
     description: "Look how fast that cart is going. What does this mean for the actual experience? I don't know.",
     img: flo3
-  },
-  
+  }
 ]
+
+export const descriptionCookie = `Ta strona wykorzystuje pliki cookies w celu uzupełnienia zbilansowanej diety i zapewnienia zasłużonej nagrody
+          dla zmysłów po spożyciu mdłych, ale pożywnych posiłków. Akceptacja naszych ciasteczek jest opcjonalna, ale
+          zalecana, ponieważ są one pyszne. Zobacz nasze`
