@@ -5,11 +5,11 @@ export default function Terms() {
     <div className="bg-white py-32 px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Terms and Conditions</h1>
-        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Welcome to peruzeaxan.com</h2>
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Welcome to Ultra-cardiox.com</h2>
         <p className="mt-6 text-xl leading-8">
-          These terms and conditions outline the rules and regulations for the use of Company Name's peruzeaxan.com,
-          located at peruzeaxan.com. By accessing this website we assume you accept these terms and conditions. Do not
-          continue to use peruzeaxan.com if you do not agree to take all of the terms and conditions stated on this
+          These terms and conditions outline the rules and regulations for the use of Company Name's Ultra-cardiox.com,
+          located at Ultra-cardiox.com. By accessing this website we assume you accept these terms and conditions. Do not
+          continue to use Ultra-cardiox.com if you do not agree to take all of the terms and conditions stated on this
           page. The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
           and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to
           the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company.
