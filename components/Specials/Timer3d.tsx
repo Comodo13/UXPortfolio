@@ -63,7 +63,15 @@ const Timer3d = (props: Props): ReactElement => {
   const { labels } = props
   const isMounted = useIsMounted()
   const router = useRouter()
-  const defaultTime = useMemo(() => DateTime.local().plus({ days: 1, hours: 0, minutes: 0, seconds: 3 }), [])
+  
+  const now = DateTime.local()
+  let defaultDays = 1
+  if (now.day % 2 == 0) { defaultDays = 0 }
+  const hours = 24 - now.hour
+  const minutes = 60 - now.minute
+  const seconds = 60 - now.second
+
+  const defaultTime = useMemo(() => DateTime.local().plus({ days: defaultDays, hours: hours, minutes: minutes, seconds: seconds }), [])
   const initialDate = router.query?.date
     ? DateTime.fromISO(Array.isArray(router.query.date) ? router.query.date[0] : router.query.date)
     : null
