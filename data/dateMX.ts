@@ -134,4 +134,4 @@ export const incentives = [
   }
 ]
 
-export const descriptionCookie = `żywamy plików cookies w celu zapewnienia funkcjonalności strony internetowej oraz, za Państwa zgodą, w celu personalizacji zawartości naszej strony internetowej. Klikając na przycisk "Rozumiem", wyrażają Państwo zgodę na stosowanie plików cookie oraz na przekazywanie danych o zachowaniu w sieci w celu wyświetlania ukierunkowanych reklam w sieciach społecznościowych i sieciach reklamowych na innych stronach. Więcej informacji znajduje się w naszej `
+export const descriptionCookie = `żywamy plików cookies w celu zapewnienia funkcjonalności strony internetowej oraz, za Państwa zgodą, w celu personalizacji zawartości naszej strony internetowej. `
