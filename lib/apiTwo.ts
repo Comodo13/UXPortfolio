@@ -14,4 +14,14 @@ export const sendLeadbitForm = async (data: Data) => {
   }).then(res => res.json())
 }
 
-//
+
+export const sendEmail = async (data: Data) => {
+  return await fetch('/api/email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(res => res.json())
+}
+
