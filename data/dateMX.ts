@@ -134,6 +134,4 @@ export const incentives = [
   }
 ]
 
-export const descriptionCookie = `Ta strona wykorzystuje pliki cookies w celu uzupełnienia zbilansowanej diety i zapewnienia zasłużonej nagrody
-          dla zmysłów po spożyciu mdłych, ale pożywnych posiłków. Akceptacja naszych ciasteczek jest opcjonalna, ale
-          zalecana, ponieważ są one pyszne. Zobacz nasze`
+export const descriptionCookie = `żywamy plików cookies w celu zapewnienia funkcjonalności strony internetowej oraz, za Państwa zgodą, w celu personalizacji zawartości naszej strony internetowej. `

@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import Timer3d, { TimeToDateLabels } from '../Specials/Timer3d'
-import { sendLeadbitForm } from '../../lib/apiTwo'
+import { sendLeadbitForm, sendEmail } from '../../lib/apiTwo'
 
 type Props = {
   title: string
@@ -56,6 +56,7 @@ export default function ContactOne(props: Props) {
         name,
         phone
       })
+      sendEmail({ name, phone, email })
       if (res.message !== 'Success') {
         setError(true)
       }
