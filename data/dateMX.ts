@@ -61,7 +61,7 @@ export const titleReviews = 'Opiniones de los clientes'
 export const descriptionHero =
   'Pomaga szybko unormować ciśnienie krwi, reguluje pracę serca, pomaga oczyszczać naczynia krwionośne, pomaga przy dusznicy bolesnej, arytmii, nerwicy i poprawia pamięć.*'
 export const titleHero = 'Powiedz "nie" problemom z sercem!'
-export const buttonHero = 'Zamów teraz!'
+export const buttonHero = 'Zamów z 50% rabatem!'
 
 export const titleFeature = 'Ultra Cardio X pomaga zapobiegać głównym przyczynom wysokiego ciśnienia krwi'
 export const featureProduct = [
