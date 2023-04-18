@@ -77,7 +77,7 @@ export const featureProduct = [
   {
     name: 'Nadwaga',
     description:
-      'Ultra Cardio X wspomaga odchudzanie, poprawia trawienie, działa żółciopędnie, normalizuje metabolizm lipidów i obniża poziom cholesterolu we krwi dzięki wyciągowi z korzenia pokrzywy.*',
+      'Ultra Cardio X przywraca funkcję nerek, zwiększa liczbę czerwonych krwinek, sprzyja utracie wagi, poprawia trawienie, normalizuje metabolizm lipidów.*',
     imageSrc: featureIconTwo,
     imageAlt: 'Nadwaga',
     bgColor: 'white',
@@ -86,7 +86,7 @@ export const featureProduct = [
   {
     name: 'Podwyższony poziom cukru we krwi',
     description:
-      'Chlorofil zawarty w pokrzywie działa stymulująco na układ odpornościowy i pomaga w gojeniu uszkodzonych tkanek. Badania na zwierzętach wykazały, że napary z liści pokrzywy mogą obniżać poziom cukru u diabetyków, zwiększać poziom hemoglobiny i normalizować funkcje układu krążenia.*',
+      'Obniża poziom cukru, zwiększa ilość hemoglobiny we krwi i normalizuje układ krążenia. Chlorofil zawarty w pokrzywach stymuluje układ odpornościowy.*',
     imageSrc: featureIconThree,
     imageAlt: 'Podwyższony poziom cukru we krwi',
     bgColor: 'white',
@@ -95,7 +95,7 @@ export const featureProduct = [
   {
     name: 'Toksyny w naczyniach krwionośnych',
     description:
-      'Ultra Cardio X poprawia pracę serca, działa przeciwzapalnie i odtruwa naczynia krwionośne dzięki ekstraktom z tiaminy i korzenia pokrzywy.*',
+      'Ultra Cardio X odtruwa, wzmacnia ściany naczyń krwionośnych, poprawia lepkość krwi, działa przeciwzapalnie dzięki tiaminie i wyciągom z korzenia pokrzywy.*',
     imageSrc: featureIconThour,
     imageAlt: 'Toksyny w naczyniach krwionośnych',
     bgColor: 'white',
@@ -104,7 +104,7 @@ export const featureProduct = [
   {
     name: 'Normalizuje ciśnienie krwi',
     description:
-      'Działa kardiotonicznie i przeciwskurczowo, umiarkowanie obniża ciśnienie krwi, uspokaja układ nerwowy dzięki wyciągom z owoców i liści głogu.*',
+      'Poprawia pracę serca, normalizuje rytm serca, a dzięki wyciągom z jagód i liści głogu uspokaja układ nerwowy.*',
     imageSrc: krw,
     imageAlt: 'Normalizuje ciśnienie krwi',
     bgColor: 'white',
