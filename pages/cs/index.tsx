@@ -44,22 +44,22 @@ import {
   
   export default function Example() {
     return (
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-12 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">Ceska sporka</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Financni Kouc</p>
+            <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Finanční Kouč</p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Obirame vas o penize...
+            Financial advisory feature embedded within Ceska Sporitelna's mobile banking "George". 
             </p>
           </div>
         </div>
-        <div className="relative overflow-hidden pt-16">
+        <div className="relative overflow-hidden pt-8">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <Image
               src={fink}
               alt="App screenshot"
-              className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+              className="mb-[-12%] rounded-xl"
               width={2432}
               height={1442}
             />
