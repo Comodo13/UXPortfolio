@@ -38,36 +38,31 @@ import { PaperClipIcon } from '@heroicons/react/24/solid'
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+        <div className="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 md:mt-24 lg:px-8">
         <div>
       <div className="px-4 sm:px-0">
-        <h3 className="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
-        <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+        <h3 className="text-2xl font-semibold leading-7 text-gray-900">Overview</h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">Full name</dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Margot Foster</dd>
+            <dt className="text-md font-medium leading-6 text-gray-900">Project Duration</dt>
+            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">December 2022 - October 2023</dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">Application for</dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Backend Developer</dd>
+            <dt className="text-md font-medium leading-6 text-gray-900">My Role</dt>
+            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">UX Designer</dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">Email address</dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">margotfoster@example.com</dd>
+            <dt className="text-md font-medium leading-6 text-gray-900">Team</dt>
+            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Product Owner <br></br>Customer Journey Experts<br></br>Behavioural Experts<br></br>Data Analytics<br></br>Front-end Developer<br></br>Back-end Developer</dd>
+            
           </div>
+    
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">Salary expectation</dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">$120,000</dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm font-medium leading-6 text-gray-900">About</dt>
-            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+            <dt className="text-md font-medium leading-6 text-gray-900">Context</dt>
+            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            Ceska Sporitelna identified a need to enhance their mobile banking experience by providing a comprehensive financial advisory service. The aim was to empower users with personalized insights and tips to better manage their finances. The solution, named "Financial Coach," utilizes push notifications, emails, and in-app messages to deliver timely and relevant advice.
             </dd>
           </div>
           <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
