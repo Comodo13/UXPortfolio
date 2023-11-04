@@ -8,9 +8,9 @@ import {
 } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import fink from '../../public/logos/fink.jpg'
-import fink2 from '../../public/logos/fink.jpg'
-import fink3 from '../../public/logos/fink.jpg'
-import stats from '../../public/logos/fink.jpg'
+import fink2 from '../../public/logos/fink2.jpg'
+import fink3 from '../../public/logos/fink3.jpg'
+import stats from '../../public/logos/stats.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
 
