@@ -33,7 +33,9 @@ import {
   titleHero,
   textFooter,
   titleFeature,
-
+  titleFeatureSeven,
+  titleReviews,
+  reviews,
   descriptionHero,
   buttonHero,
   buttonFeatureSeven,
@@ -51,7 +53,7 @@ const Home: NextPage = () => {
     
 
 
-    <StudyPreview    />
+    <StudyPreview />
      
    
   )
