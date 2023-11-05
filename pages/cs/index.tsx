@@ -10,6 +10,8 @@ import Image from 'next/image'
 import fink from '../../public/logos/fink.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
 import fink3 from '../../public/logos/fink3.jpg'
+import research from '../../public/logos/research.jpg'
+import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
@@ -18,54 +20,43 @@ import { Tab } from '@headlessui/react'
 
 const tabs = [
   {
-    name: 'Моментально накидывала в фигме',
+    name: 'UX Researcher',
     features: [
       {
-        name: 'Adaptive and modular',
+        name: 'UX Researcher',
         description:
-          'The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg',
+          'As the UX Researcher for "Financial Coach" project, I engaged in user interviews to gather invaluable insights into diverse financial behaviors. Simultaneously, I conducted a thorough competitor analysis, extracting key insights that influenced the design strategy, ultimately shaping an innovative and user-friendly financial advisory tool.',
+        imageSrc: research,
         imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
       },
     ],
   },
   {
-    name: 'Хреначила за всех',
+    name: 'UX Designer',
     features: [
       {
-        name: 'Natural wood options',
+        name: 'UX Designer',
         description:
-          'Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg',
+          'My responsibilities as a UX Designer involved ensuring a consistent user experience, aligning with Česká Spořitelna style guides and leveraging the capabilities of the George Design System for an efficient and cohesive design implementation.',
+        imageSrc: design,
         imageAlt:
           'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
       },
     ],
   },
   {
-    name: 'Опускала кролика',
+    name: 'Usability Expert',
     features: [
       {
-        name: 'Он лох',
+        name: 'Usability Expert',
         description:
-          "Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg',
+          "I did testing from initial UI sketches to a final prototype where the full usability testing was conducted. The continual validation helped me to identify difficult parts and not well-working pathways before we shipped solution to users.",
+        imageSrc: research,
         imageAlt: 'Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.',
       },
     ],
   },
-  {
-    name: 'Поставила на место Product owner',
-    features: [
-      {
-        name: "У нее Бомбануло",
-        description:
-          'The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg',
-        imageAlt: 'Walnut organizer system on black leather desk mat on top of white desk.',
-      },
-    ],
-  },
+
 ]
 
 function classNames(...classes: string[]) {
@@ -82,7 +73,7 @@ export default function Example() {
           <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Finanční Kouč</p>
           <p className="mt-6 text-lg leading-6 text-gray-700">
-          Financial advisory feature embedded within Ceska Sporitelna's mobile banking "George". 
+          Financial advisory feature embedded within Česká Spořitelna's mobile banking "George". 
           </p>
         </div>
       </div>
@@ -148,7 +139,7 @@ export default function Example() {
           <Image
             src={fink2}
             alt="App screenshot"
-            className="mb-[-12%] rounded-xl"
+            className=" rounded-xl"
             width={2432}
             height={1442}
           />
@@ -157,7 +148,7 @@ export default function Example() {
           </div>
         </div>
 
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-white px-6 py-2 sm:py-12 lg:overflow-visible lg:px-0">
     <div className="absolute inset-0 -z-10 overflow-hidden">
       <svg
         className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -170,16 +161,13 @@ export default function Example() {
 
 
     <div className="bg-white">
-      <section aria-labelledby="features-heading" className="mx-auto max-w-7xl py-32 sm:px-2 lg:px-8">
-        <div className="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
+      <section aria-labelledby="features-heading" className="mx-auto max-w-7xl pt-12 pb-48 sm:px-2 lg:px-8">
+        <div className="mx-auto max-w-2xl px-8 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">
-            <h2 id="features-heading" className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Technical Specifications
+            <h2 id="features-heading" className="text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">
+              My Role
             </h2>
-            <p className="mt-4 text-gray-500">
-              The Organize modular system offers endless options for arranging your favorite and most used items. Keep
-              everything at reach and in its place, while dressing up your workspace.
-            </p>
+           
           </div>
 
           <Tab.Group as="div" className="mt-4">
@@ -192,9 +180,9 @@ export default function Example() {
                       className={({ selected }) =>
                         classNames(
                           selected
-                            ? 'border-indigo-500 text-indigo-600'
+                            ? 'border-blue-600 text-blue-700'
                             : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
-                          'whitespace-nowrap border-b-2 py-6 text-sm font-medium'
+                          'whitespace-nowrap border-b-2 py-2 text-lg font-medium'
                         )
                       }
                     >
@@ -212,11 +200,11 @@ export default function Example() {
                     <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
                       <div className="mt-6 lg:col-span-5 lg:mt-0">
                         <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
-                        <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
+                        <p className="mt-3 text-lg leading-6 text-gray-600">{feature.description}</p>
                       </div>
                       <div className="lg:col-span-7">
                         <div className="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5">
-                          <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                          <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
                         </div>
                       </div>
                     </div>
