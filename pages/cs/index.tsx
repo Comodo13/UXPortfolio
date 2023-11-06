@@ -9,6 +9,8 @@ import {
   RocketLaunchIcon,
   CheckCircleIcon,
   BoltIcon,
+  HandThumbUpIcon,
+  HandThumbDownIcon,
 } from '@heroicons/react/20/solid'
 
 import Image from 'next/image'
@@ -19,6 +21,7 @@ import research from '../../public/logos/research.jpg'
 import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
 import expert from '../../public/logos/uxexpert.jpg'
+import test from '../../public/logos/fink5.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
 import { Fragment } from 'react'
@@ -37,7 +40,7 @@ const features = [
     icon: BoltIcon,
   },
   {
-    name: 'Improved Financial Literacy.',
+    name: 'Boost Financial Education.',
     description: 'Enhance users understanding of financial concepts, such as budgeting, investing, and saving.',
     icon: RocketLaunchIcon,
   },
@@ -55,6 +58,40 @@ const features = [
     name: 'Diverse User Preferences.',
     description: 'We introduced personalization options to create an inclusive and effective learning experience.',
     icon: BoltIcon,
+  },
+]
+
+const features2 = [
+  {
+    name: '',
+    description: 'Increased user engagement, with users spending more time within the app.',
+    icon:   HandThumbUpIcon,
+  },
+  {
+    name: '',
+    description: "Regrettably, I couldn't entirely shift the feature's mindset toward a more user-centric approach.",
+    icon: HandThumbDownIcon,
+  },
+  {
+    name: '',
+    description: 'Feedback from customers, especially in the younger user segment, reported increased confidence in their financial management skills.',
+    icon:   HandThumbUpIcon,
+  },
+  {
+    name: '',
+    description: 'Sometimes it took longer than things started to happen.',
+    icon: HandThumbDownIcon,
+  },
+  {
+    name: '',
+    description: 'Created an innovative service that helped users to increase their financial management skills .',
+    icon: HandThumbUpIcon,
+  },
+  {
+
+    name: '',
+    description: 'Due to technical constraints and my negotiation skills, not all elements aligned with user experience and usability principles.',
+    icon: HandThumbDownIcon,
   },
 ]
 
@@ -379,81 +416,44 @@ export default function Example() {
 
 
 
-
-
-    
-
-    <div className="relative overflow-hidden pt-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <Image
-            src={fink3}
-            alt="App screenshot"
-            className="mb-[-12%] rounded-xl"
-            width={2432}
-            height={1442}
-          />
-          <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
       <div className="relative bg-white">
       <div className="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
         <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
           <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
-            <img
+            <Image
               className="absolute inset-0 h-full w-full bg-gray-50 object-cover"
-              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=2560&h=3413&&q=80"
+              src={test}
               alt=""
             />
           </div>
         </div>
         <div className="px-6 lg:contents">
           <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
-            <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-            <p className="mt-6 text-xl leading-8 text-gray-700">
-              Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-              aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend
-              egestas fringilla sapien.
+            <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Usability testing</h1>
+            <p className="mt-6 text-lg leading-6 text-gray-700 ">
+            One of the crucial part for the Financial Coach servise was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
             </p>
             <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                semper sed amet vitae sed turpis id.
-              </p>
+          
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                <li className="flex gap-x-3">
-                  <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                  <span>
-                    <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                    blanditiis ratione.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                  <span>
-                    <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                    ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                  <span>
-                    <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
-                    vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                </span>
+              </li>
               </ul>
               <p className="mt-8">
                 Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
@@ -472,6 +472,27 @@ export default function Example() {
         </div>
       </div>
     </div>
+
+
+<div className="bg-white pb-24 sm:py-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+             <h2 className="my-16 text-2xl font-bold tracking-tight text-gray-900">Results & Takeaways</h2>
+        
+        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+
+          {features2.map((feature) => (
+            <div key={feature.name} className="relative pl-9">
+              <dt className="inline font-semibold text-gray-900">
+                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-green-600" aria-hidden="true" />
+                {feature.name}
+              </dt>{' '}
+              <dd className="inline">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+    
 
   </div>
     </div>
