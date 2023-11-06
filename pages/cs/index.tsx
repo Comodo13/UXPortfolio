@@ -5,13 +5,23 @@ import {
   FingerPrintIcon,
   LockClosedIcon,
   PlayIcon,
+  AcademicCapIcon,
+  BanknotesIcon,
   ServerIcon,
   RocketLaunchIcon,
   CheckCircleIcon,
   BoltIcon,
   HandThumbUpIcon,
   HandThumbDownIcon,
+  UserGroupIcon,
+
 } from '@heroicons/react/20/solid'
+
+import {
+  FaceSmileIcon,
+  FaceFrownIcon,
+} from '@heroicons/react/24/outline'
+
 
 import Image from 'next/image'
 import fink from '../../public/logos/fink.jpg'
@@ -32,7 +42,7 @@ const features = [
   {
     name: 'Educational Focus.',
     description: 'Create a user-friendly and engaging platform that provides customers with valuable financial knowledge.',
-    icon: RocketLaunchIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: 'Technical Integration with "George" Mobile App.',
@@ -40,9 +50,9 @@ const features = [
     icon: BoltIcon,
   },
   {
-    name: 'Boost Financial Education.',
+    name: 'Increase Financial Literacy.',
     description: 'Enhance users understanding of financial concepts, such as budgeting, investing, and saving.',
-    icon: RocketLaunchIcon,
+    icon: BanknotesIcon,
   },
   {
     name: 'User Adoption and Habit Formation.',
@@ -52,7 +62,7 @@ const features = [
   {
     name: 'User Engagement.',
     description: 'Encourage regular usage of the Financial Coach feature to help customers make informed financial decisions.',
-    icon: RocketLaunchIcon,
+    icon: UserGroupIcon,
   },
   {
     name: 'Diverse User Preferences.',
@@ -64,40 +74,40 @@ const features = [
 const features2 = [
   {
     name: '',
-    description: 'Increased user engagement, with users spending more time within the app.',
-    icon:   HandThumbUpIcon,
-    color: 'red',
+    description: 'Created an innovative service that helped users to enhance their financial management skills.',
+    icon:   FaceSmileIcon,
+    color: 'green',
   },
   {
     name: '',
     description: "Regrettably, I couldn't entirely shift the feature's mindset toward a more user-centric approach.",
-    icon: HandThumbDownIcon,
-    color: 'green',
+    icon: FaceFrownIcon,
+    color: 'red',
   },
   {
     name: '',
-    description: 'Feedback from customers, especially in the younger user segment, reported increased confidence in their financial management skills.',
-    icon:   HandThumbUpIcon,
-    color: 'red',
+    description: 'Increased user engagement, with users spending more time within the app.',
+    icon:   FaceSmileIcon,
+    color: 'green',
   },
   {
     name: '',
     description: 'Sometimes it took longer than things started to happen.',
-    icon: HandThumbDownIcon,
-    color: 'green',
+    icon: FaceFrownIcon,
+    color: 'red',
   },
   {
     name: '',
-    description: 'Created an innovative service that helped users to increase their financial management skills .',
-    icon: HandThumbUpIcon,
-    color: 'red',
+    description: 'Feedback from customers, especially in the younger user segment, reported increased confidence in their financial management skills.',
+    icon: FaceSmileIcon,
+    color: 'green',
   },
   {
 
     name: '',
-    description: 'Due to technical constraints and my negotiation skills, not all elements aligned with user experience and usability principles.',
-    icon: HandThumbDownIcon,
-    color: 'green',
+    description: 'Some aspects did not fully adhere to user experience, primarily due to technical constraints or  my insufficient negotiation skills.',
+    icon: FaceFrownIcon,
+    color: 'red',
   },
 ]
 
@@ -133,7 +143,7 @@ const tabs = [
       {
         name: 'Usability Expert',
         description:
-          "I focused was on optimizing the user experience through extensive usability testing and continuous refinement. I analyzed user interactions, and worked closely with the UX team to implement improvements that enhanced the overall usability of the Financial Coach feature.",
+          "My focus was on optimizing the user experience through extensive usability testing and continuous refinement. I analyzed user interactions, and worked closely with the UX team to implement improvements that enhanced the overall usability of the Financial Coach feature.",
         imageSrc: expert,
         imageAlt: 'Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.',
       },
