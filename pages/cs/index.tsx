@@ -5,16 +5,20 @@ import {
   FingerPrintIcon,
   LockClosedIcon,
   PlayIcon,
-  ServerIcon
+  ServerIcon,
+  RocketLaunchIcon,
+  CheckCircleIcon,
+  BoltIcon,
 } from '@heroicons/react/20/solid'
 
 import Image from 'next/image'
 import fink from '../../public/logos/fink.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
-import fink3 from '../../public/logos/fink3.jpg'
+import fink3 from '../../public/logos/fink4.jpg'
 import research from '../../public/logos/research.jpg'
 import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
+import expert from '../../public/logos/uxexpert.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
 import { Fragment } from 'react'
@@ -23,34 +27,34 @@ import { Tab } from '@headlessui/react'
 
 const features = [
   {
-    name: 'Push to deploy.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
-    icon: CloudArrowUpIcon,
+    name: 'Educational Focus.',
+    description: 'Create a user-friendly and engaging platform that provides customers with valuable financial knowledge.',
+    icon: RocketLaunchIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+    name: 'Technical Integration with "George" Mobile App.',
+    description: 'Ensuring seamless technical integration within the existing "George" mobile app, we collaborated closely with the development team to address technical dependencies, conducting thorough testing before each release.',
+    icon: BoltIcon,
   },
   {
-    name: 'Simple queues.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus voluptas blanditiis et.',
-    icon: ArrowPathIcon,
+    name: 'Improved Financial Literacy.',
+    description: 'Enhance users understanding of financial concepts, such as budgeting, investing, and saving.',
+    icon: RocketLaunchIcon,
   },
   {
-    name: 'Advanced security.',
-    description: 'Iure sed ab. Aperiam optio placeat dolor facere. Officiis pariatur eveniet atque et dolor.',
-    icon: FingerPrintIcon,
+    name: 'User Adoption and Habit Formation.',
+    description: 'Encouraging users to adopt Financial Coach as a regular part of their financial routine, we implemented a gamification element, rewarding users for consistent engagement and achievement of financial milestones.',
+    icon: BoltIcon,
   },
   {
-    name: 'Powerful API.',
-    description: 'Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus.',
-    icon: Cog6ToothIcon,
+    name: 'User Engagement.',
+    description: 'Encourage regular usage of the Financial Coach feature to help customers make informed financial decisions.',
+    icon: RocketLaunchIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Culpa dolorem voluptatem velit autem rerum qui et corrupti. Quibusdam quo placeat.',
-    icon: ServerIcon,
+    name: 'Diverse User Preferences.',
+    description: 'Introduced a customizable notification preferences feature, allowing users to choose their preferred communication channel.',
+    icon: BoltIcon,
   },
 ]
 
@@ -61,7 +65,7 @@ const tabs = [
       {
         name: 'UX Researcher',
         description:
-          'As the UX Researcher for "Financial Coach" project, I engaged in user interviews to gather invaluable insights into diverse financial behaviors. Simultaneously, I conducted a thorough competitor analysis, extracting key insights that influenced the design strategy, ultimately shaping an innovative and user-friendly financial advisory tool.',
+          'I conducted user interviews with existing George app users to understand their financial literacy levels, needs, and pain points. Additionally, I performed a comprehensive competitor analysis to inform our design strategy and create an innovative, user-friendly financial advisory tool.',
         imageSrc: research,
         imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
       },
@@ -73,7 +77,7 @@ const tabs = [
       {
         name: 'UX Designer',
         description:
-          'My responsibilities as a UX Designer involved ensuring a consistent user experience, aligning with Česká Spořitelna style guides and leveraging the capabilities of the George Design System for an efficient and cohesive design implementation.',
+          'As a UX Designer for the project, I crafted a user-friendly experience aligned with Ceska Sporitelna style guides, designed clear information architecture, curatied diverse content, mapped out seamless user journeys, and created interactive prototypes for testing and feedback.',
         imageSrc: design,
         imageAlt:
           'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
@@ -86,8 +90,8 @@ const tabs = [
       {
         name: 'Usability Expert',
         description:
-          "I did testing from initial UI sketches to a final prototype where the full usability testing was conducted. The continual validation helped me to identify difficult parts and not well-working pathways before we shipped solution to users.",
-        imageSrc: research,
+          "I focused was on optimizing the user experience through extensive usability testing and continuous refinement. I analyzed user interactions, and worked closely with the UX team to implement improvements that enhanced the overall usability of the Financial Coach feature.",
+        imageSrc: expert,
         imageAlt: 'Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.',
       },
     ],
@@ -194,21 +198,17 @@ export default function Example() {
 
 
 
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="bg-white pb-24 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-            dolor cupiditate blanditiis.
-          </p>
-        </div>
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+       
+        
+        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Goals</h2>
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Challanges</h2>
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold text-white">
-                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+              <dt className="inline font-semibold text-gray-900">
+                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-blue-500" aria-hidden="true" />
                 {feature.name}
               </dt>{' '}
               <dd className="inline">{feature.description}</dd>
@@ -218,8 +218,23 @@ export default function Example() {
       </div>
     </div>
 
+    
 
 
+    <div className="relative overflow-hidden pt-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Image
+            src={fink3}
+            alt="App screenshot"
+            className="mb-[-12%] rounded-xl"
+            width={2432}
+            height={1442}
+          />
+          <div className="relative" aria-hidden="true">
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+          </div>
+        </div>
+      </div>
 
 
     <div className="bg-white">
@@ -287,9 +302,9 @@ export default function Example() {
         <div className="lg:pr-4">
           <div className="lg:max-w-lg">
     
-            <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">User Research </h1>
+            <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Onboarding</h1>
             <p className="mt-6 text-lg leading-6 text-gray-700 ">
-            In-depth user research was a crucial component of the Financial Coach project, especially considering the challenging financial landscape in the Czech Republic.
+            One of the crucial part for the Financial Coach servise was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
             </p>
           </div>
         </div>
@@ -303,30 +318,44 @@ export default function Example() {
       </div>
       <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="lg:pr-4">
-          <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+          <div className="max-w-xl text-lg leading-7 text-gray-700 lg:max-w-lg">
             <ul role="list" className="space-y-8 text-gray-600">
-            <p className="mt-6 text-lg leading-6 text-gray-700 ">
-            According to an Ipsos survey, a significant portion of adults face difficulties in building long-term financial reserves. Key findings from the survey include:
-            </p>
+          
+             
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Lack of Long-Term Financial Reserves.</strong> Approximately one in six adults reported not building up any long-term financial reserves.
-Banks noted that even for those who do save, the amounts are often insufficient.
+                  <strong className="font-semibold text-gray-900">Introduction to Financial Coach.</strong>The onboarding experience highlights the key benefits of using the Financial Coach, such as gaining financial knowledge, making informed decisions, and achieving financial goals.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Retirement Challenges.</strong> Banks recommend having CZK 2 million in an account for retirement.
-Achieving this amount is feasible by setting aside lower units of thousands of crowns per month.
+                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
                 </span>
               </li>
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
-                  vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  <strong className="font-semibold text-gray-900">Educational Modules.</strong> Delivering educational content during onboarding that caters to users with varying levels of financial literacy.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Financial Goals Identification.</strong> Helping users define and set realistic financial goals without creating a sense of obligation.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Gamification Element.</strong> Encouraging users to engage with Financial Coach consistently.
+                </span>
+              </li>
+              <li className="flex gap-x-3">
+                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                <span>
+                  <strong className="font-semibold text-gray-900">Feedback Collection.</strong> Establishing an unobtrusive way to collect user feedback on the onboarding experience.
                 </span>
               </li>
             </ul>
