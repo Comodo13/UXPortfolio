@@ -66,32 +66,38 @@ const features2 = [
     name: '',
     description: 'Increased user engagement, with users spending more time within the app.',
     icon:   HandThumbUpIcon,
+    color: 'red',
   },
   {
     name: '',
     description: "Regrettably, I couldn't entirely shift the feature's mindset toward a more user-centric approach.",
     icon: HandThumbDownIcon,
+    color: 'green',
   },
   {
     name: '',
     description: 'Feedback from customers, especially in the younger user segment, reported increased confidence in their financial management skills.',
     icon:   HandThumbUpIcon,
+    color: 'red',
   },
   {
     name: '',
     description: 'Sometimes it took longer than things started to happen.',
     icon: HandThumbDownIcon,
+    color: 'green',
   },
   {
     name: '',
     description: 'Created an innovative service that helped users to increase their financial management skills .',
     icon: HandThumbUpIcon,
+    color: 'red',
   },
   {
 
     name: '',
     description: 'Due to technical constraints and my negotiation skills, not all elements aligned with user experience and usability principles.',
     icon: HandThumbDownIcon,
+    color: 'green',
   },
 ]
 
@@ -480,15 +486,16 @@ export default function Example() {
         
         <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
 
-          {features2.map((feature) => (
-            <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold text-gray-900">
-                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-green-600" aria-hidden="true" />
-                {feature.name}
-              </dt>{' '}
-              <dd className="inline">{feature.description}</dd>
-            </div>
-          ))}
+        {features2.map((feature) => (
+          <div key={feature.name} className="relative pl-9">
+            <dt className={`inline font-semibold text-${feature.color}-600`}>
+              <feature.icon className="absolute left-1 top-1 h-5 w-5" aria-hidden="true" />
+              {feature.name}
+            </dt>{' '}
+            <dd className="inline">{feature.description}</dd>
+          </div>
+        ))}
+
         </dl>
       </div>
     </div>
