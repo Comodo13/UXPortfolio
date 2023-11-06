@@ -33,7 +33,7 @@ const features = [
   },
   {
     name: 'Technical Integration with "George" Mobile App.',
-    description: 'Ensuring seamless technical integration within the existing "George" mobile app, we collaborated closely with the development team to address technical dependencies, conducting thorough testing before each release.',
+    description: 'Our team worked diligently to ensure that the integration was aligned with the application overall design and performance standards.',
     icon: BoltIcon,
   },
   {
@@ -43,7 +43,7 @@ const features = [
   },
   {
     name: 'User Adoption and Habit Formation.',
-    description: 'Encouraging users to adopt Financial Coach as a regular part of their financial routine, we implemented a gamification element, rewarding users for consistent engagement and achievement of financial milestones.',
+    description: 'Our approach included crafting a compelling onboarding experience, designing engaging content, and implementing motivational elements.',
     icon: BoltIcon,
   },
   {
@@ -53,7 +53,7 @@ const features = [
   },
   {
     name: 'Diverse User Preferences.',
-    description: 'Introduced a customizable notification preferences feature, allowing users to choose their preferred communication channel.',
+    description: 'We introduced personalization options to create an inclusive and effective learning experience.',
     icon: BoltIcon,
   },
 ]
@@ -355,7 +355,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Feedback Collection.</strong> Establishing an unobtrusive way to collect user feedback on the onboarding experience.
+                  <strong className="font-semibold text-gray-900">Feedback Collection.</strong>Incorporating feedback mechanisms within the feature to collect user suggestions and identify areas for improvement.
                 </span>
               </li>
             </ul>
@@ -375,6 +375,13 @@ export default function Example() {
         </div>
       </div>
     </div>
+
+
+
+
+
+
+    
 
     <div className="relative overflow-hidden pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
