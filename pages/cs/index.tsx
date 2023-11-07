@@ -41,7 +41,7 @@ import { Tab } from '@headlessui/react'
 const features = [
   {
     name: 'Educational Focus.',
-    description: 'Create a user-friendly and engaging platform that provides customers with valuable financial knowledge.',
+    description: 'Create a user-friendly and engaging service that provides customers with valuable financial knowledge.',
     icon: AcademicCapIcon,
   },
   {
@@ -86,7 +86,7 @@ const features2 = [
   },
   {
     name: '',
-    description: 'Increased user engagement, with users spending more time within the app.',
+    description: 'Increased user engagement, with users spending more time within the App.',
     icon:   FaceSmileIcon,
     color: 'green',
   },
@@ -164,9 +164,9 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Finanční Kouč</p>
-          <p className="mt-6 text-lg leading-6 text-gray-700">
-          Financial advisory feature embedded within Česká Spořitelna's mobile banking "George". 
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Finanční Kouč</p>
+          <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
+          Designing a "Financial Advisory Service" for mobile banking "George"<br></br> with over 2 million daily active users.
           </p>
         </div>
       </div>
@@ -203,7 +203,7 @@ export default function Example() {
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">My Role</dt>
-          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">UX Designer</dd>
+          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">UX Designer & Researcher </dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Team</dt>
@@ -446,36 +446,44 @@ export default function Example() {
         <div className="px-6 lg:contents">
           <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
             <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Usability testing</h1>
-            <p className="mt-6 text-lg leading-6 text-gray-700 ">
-            One of the crucial part for the Financial Coach servise was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
-            </p>
-            <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
+           
+            <div className="mt-10 max-w-xl text-lg leading-7 text-gray-700 lg:max-w-none">
           
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
               <li className="flex gap-x-3">
-                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+            
                 <span>
-                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                  <strong className="font-semibold text-gray-900">The First Usability Session.</strong> We welcomed six respondents from diverse backgrounds at Ceska Sporitelna's Usability Lab. The initial testing rounds provided us with 
+                  the insights and ideas. Users' interactions shed light on both the strengths and weaknesses of the feature.
                 </span>
               </li>
               <li className="flex gap-x-3">
-                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                
                 <span>
-                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                  <strong className="font-semibold text-gray-900">Continuous Validation and Iteration.</strong> I continually iterated on the designs based on the feedback and observations gathered from the usability sessions. It became evident that this iterative approach was instrumental in refining the user experience.
                 </span>
               </li>
               <li className="flex gap-x-3">
-                <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                
                 <span>
-                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                  <strong className="font-semibold text-gray-900">Demo Testing with Ceska Sporitelna Employees.</strong> To gain more qualitative insights, we tested a demo version with Ceska Sporitelna employees who use George mobile banking. It revieled that some users struggled to grasp the functionality of the Financial Coach feature, leading us to adjust information and content for better clarity.
                 </span>
               </li>
+
+             
+
+              <li className="flex gap-x-3">
+            
+                <span>
+                  <strong className="font-semibold text-gray-900">Applying feedback & improvements.</strong> Finally, after meticulously analyzing the feedback and conducting several iterations, we made significant refinements to the Financial Coach feature. These refinements addressed usability issues, improved the clarity of information, and ensured that the feature was genuinely user-centric.
+
+
+                </span>
+              </li>
+
+            
               </ul>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-              </p>
+           
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
               <p className="mt-6">
                 Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
