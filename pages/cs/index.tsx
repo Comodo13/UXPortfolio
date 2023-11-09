@@ -24,7 +24,7 @@ import {
 
 
 import Image from 'next/image'
-import fink from '../../public/logos/fink.jpg'
+import fink from '../../public/logos/finkk.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
 import fink3 from '../../public/logos/fink4.jpg'
 import research from '../../public/logos/research.jpg'
@@ -32,6 +32,7 @@ import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
 import expert from '../../public/logos/uxexpert.jpg'
 import test from '../../public/logos/fink5.jpg'
+import statistic from '../../public/logos/statistic.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
 import { Fragment } from 'react'
@@ -46,7 +47,7 @@ const features = [
   },
   {
     name: 'Technical Integration with "George" Mobile App.',
-    description: 'Our team worked diligently to ensure that the integration was aligned with the application overall design and performance standards.',
+    description: 'Ensure that the integration wis aligned with the "George" overall design and performance standards.',
     icon: BoltIcon,
   },
   {
@@ -56,7 +57,7 @@ const features = [
   },
   {
     name: 'User Adoption and Habit Formation.',
-    description: 'Our approach included crafting a compelling onboarding experience, designing engaging content, and implementing motivational elements.',
+    description: 'Craft a compelling onboarding experience, design engaging content, and implement motivational elements.',
     icon: BoltIcon,
   },
   {
@@ -66,7 +67,7 @@ const features = [
   },
   {
     name: 'Diverse User Preferences.',
-    description: 'We introduced personalization options to create an inclusive and effective learning experience.',
+    description: 'Introduce personalization options to create an inclusive and effective learning experience.',
     icon: BoltIcon,
   },
 ]
@@ -112,18 +113,7 @@ const features2 = [
 ]
 
 const tabs = [
-  {
-    name: 'UX Researcher',
-    features: [
-      {
-        name: 'UX Researcher',
-        description:
-          'I conducted user interviews with existing George app users to understand their financial literacy levels, needs, and pain points. Additionally, I performed a comprehensive competitor analysis to inform our design strategy and create an innovative, user-friendly financial advisory tool.',
-        imageSrc: research,
-        imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
-      },
-    ],
-  },
+
   {
     name: 'UX Designer',
     features: [
@@ -137,6 +127,19 @@ const tabs = [
       },
     ],
   },
+  {
+    name: 'UX Researcher',
+    features: [
+      {
+        name: 'UX Researcher',
+        description:
+          'I conducted user interviews with existing "  George" App users to understand their financial literacy levels, needs, and pain points. Additionally, I performed a comprehensive competitor analysis to inform our design strategy and create an innovative, user-friendly financial advisory tool.',
+        imageSrc: research,
+        imageAlt: 'Maple organizer base with slots, supporting white polycarbonate trays of various sizes.',
+      },
+    ],
+  },
+
   {
     name: 'Usability Expert',
     features: [
@@ -164,9 +167,9 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Finanční Kouč</p>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Clients Financial Health  </p>
           <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
-          Designing a "Financial Advisory Service" for mobile banking "George"<br></br> with over 2 million daily active users.
+          Designing Financial Advisory Services for mobile banking "George",<br></br> with over 2 million daily active users.
           </p>
         </div>
       </div>
@@ -192,13 +195,17 @@ export default function Example() {
     <div className="mt-6 border-t border-gray-100">
       <dl className="divide-y divide-gray-100">
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-lg font-medium leading-6 text-gray-900">Project Name</dt>
+          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Financial Health Zone</dd>
+        </div>
+        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Project Duration</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">December 2022 - September 2023</dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Context</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-          Česká Spořitelna identified a need to enhance their mobile banking experience by providing a comprehensive financial advisory service. The aim was to empower users with personalized insights and tips to better manage their finances. The solution, named "Financial Coach," utilizes push notifications, emails, and in-app messages to deliver timely and relevant advice.
+          Česká Spořitelna identified a need to enhance their mobile banking experience by providing a comprehensive financial advisory service. The aim was to empower users with personalized insights and tips to better manage their finances.
           </dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -250,115 +257,8 @@ export default function Example() {
 
 
 
-
-    <div className="bg-white pb-24 sm:py-12">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-       
-        
-        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
-        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Goals</h2>
-        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Challanges</h2>
-          {features.map((feature) => (
-            <div key={feature.name} className="relative pl-9">
-              <dt className="inline font-semibold text-gray-900">
-                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-blue-500" aria-hidden="true" />
-                {feature.name}
-              </dt>{' '}
-              <dd className="inline">{feature.description}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </div>
-
-
-
-
-
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
-            <div>
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                semper sed amet vitae sed turpis id.
-              </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                adipiscing egestas.
-              </p>
-            </div>
-            <div>
-              <p>
-                Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
-                eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
-              </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-              </p>
-            </div>
-          </div>
-          <div className="mt-10 flex">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="relative overflow-hidden pt-16 lg:pt-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <img
-            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-            alt=""
-          />
-          <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-    
-
-
-    <div className="relative overflow-hidden pt-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <Image
-            src={fink3}
-            alt="App screenshot"
-            className="mb-[-12%] rounded-xl"
-            width={2432}
-            height={1442}
-          />
-          <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-          </div>
-        </div>
-      </div>
-
-
     <div className="bg-white">
-      <section aria-labelledby="features-heading" className="mx-auto max-w-7xl pt-12 pb-48 sm:px-2 lg:px-8">
+      <section aria-labelledby="features-heading" className="mx-auto max-w-7xl pb-12 pt-24 sm:px-2 lg:px-8">
         <div className="mx-auto max-w-2xl px-8 lg:max-w-none lg:px-0">
           <div className="max-w-3xl">
             <h2 id="features-heading" className="text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">
@@ -392,12 +292,12 @@ export default function Example() {
 
             <Tab.Panels as={Fragment}>
               {tabs.map((tab) => (
-                <Tab.Panel key={tab.name} className="space-y-16 pt-10 lg:pt-16">
+                <Tab.Panel key={tab.name} className="space-y-16 pt-10 lg:pt-12">
                   {tab.features.map((feature) => (
                     <div key={feature.name} className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
                       <div className="mt-6 lg:col-span-5 lg:mt-0">
                         <h3 className="text-lg font-medium text-gray-900">{feature.name}</h3>
-                        <p className="mt-3 text-lg leading-6 text-gray-600">{feature.description}</p>
+                        <p className="mt-3 text-lg leading-6 text-gray-700">{feature.description}</p>
                       </div>
                       <div className="lg:col-span-7">
                         <div className="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5">
@@ -417,6 +317,82 @@ export default function Example() {
 
 
 
+
+    <div className="bg-white pb-24 sm:py-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+       
+        
+        <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Goals</h2>
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Challanges</h2>
+          {features.map((feature) => (
+            <div key={feature.name} className="relative pl-9">
+              <dt className="inline font-semibold text-gray-900">
+                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-blue-500" aria-hidden="true" />
+                {feature.name}
+              </dt>{' '}
+              <dd className="inline">{feature.description}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+
+
+
+
+
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+          <h1 className="text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Research</h1>
+          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-gray-900 lg:max-w-none lg:grid-cols-2">
+            <div>
+              <p>
+              The survey revealed that many adults in the region faced challenges in building long-term financial reserves. One in six adults reported not saving for the long term, while even those who did save often fell short of sufficient amounts.
+              </p>
+              <p className="mt-8">
+              Retirement planning was another concern, with the recommendation of CZK 2 million for a comfortable retirement. However, the research showed that achieving this goal was attainable through gradual monthly contributions.
+            </p>
+              <p className="mt-8">
+              One in three Czechs had minimal financial reserves, insufficient even to cover a month's expenses. Managing money effectively proved to be a common challenge, with over half of respondents struggling in this regard.
+              </p>
+            </div>
+            <div>
+              <p>
+              Examining the historical context, it became clear that the financial landscape had evolved, with two-thirds of Czech households previously able to build financial reserves. 
+              </p>
+              <p className="mt-8">
+              The survey's robust sample size of 2003 individuals offered a comprehensive representation of the financial challenges experienced by the Czech population. 
+              </p>
+              <p className="mt-8">
+              These insights guided the design process, emphasizing the urgency of creating financial services that promote financial literacy, savings, and effective money management. The goal was to empower users to navigate the complex financial terrain with confidence and resilience. By addressing the real-world financial challenges highlighted by the survey, our team aimed to make a tangible impact on the financial well-being of Czech users.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div className="relative overflow-hidden pt-16 lg:pt-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Image
+            className="mb-[-12%] rounded-xl "
+            src={statistic}
+            alt=""
+          />
+          <div className="relative" aria-hidden="true">
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
       <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="lg:pr-4">
@@ -424,7 +400,7 @@ export default function Example() {
     
             <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Onboarding</h1>
             <p className="mt-6 text-lg leading-6 text-gray-700 ">
-            One of the crucial part for the Financial Coach servise was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
+            One of the crucial part for the Financial Health Project was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
             </p>
           </div>
         </div>
@@ -439,7 +415,7 @@ export default function Example() {
       <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="lg:pr-4">
           <div className="max-w-xl text-lg leading-7 text-gray-700 lg:max-w-lg">
-            <ul role="list" className="space-y-8 text-gray-600">
+            <ul role="list" className="space-y-8 text-gray-700">
           
              
               <li className="flex gap-x-3">
@@ -457,7 +433,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Educational Modules.</strong> Delivering educational content during onboarding that caters to users with varying levels of financial literacy.
+                  <strong className="font-semibold text-gray-900">Educational Modules.</strong> Delivering educational content that caters to users with varying levels of financial literacy.
                 </span>
               </li>
               <li className="flex gap-x-3">
@@ -516,11 +492,11 @@ export default function Example() {
            
             <div className="mt-10 max-w-xl text-lg leading-7 text-gray-700 lg:max-w-none">
           
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+              <ul role="list" className="mt-8 space-y-8 text-gray-700">
               <li className="flex gap-x-3">
             
                 <span>
-                  <strong className="font-semibold text-gray-900">The First Usability Session.</strong> We welcomed six respondents from diverse backgrounds at Ceska Sporitelna's Usability Lab. The initial testing rounds provided us with 
+                  <strong className="font-semibold text-gray-900">The First Usability Session.</strong> We welcomed six respondents from diverse backgrounds at Ceska Sporitelna's UX Lab. The initial testing rounds provided us with 
                   the insights and ideas. Users' interactions shed light on both the strengths and weaknesses of the feature.
                 </span>
               </li>
@@ -563,6 +539,25 @@ export default function Example() {
         </div>
       </div>
     </div>
+
+
+    <div className="relative overflow-hidden pt-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Image
+            src={fink3}
+            alt="App screenshot"
+            className="mb-[-12%] rounded-xl"
+            width={2432}
+            height={1442}
+          />
+          <div className="relative" aria-hidden="true">
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+          </div>
+        </div>
+      </div>
+
+
+   
 
 
 <div className="bg-white pb-24 sm:py-12">
