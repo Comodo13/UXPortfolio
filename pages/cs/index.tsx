@@ -47,7 +47,7 @@ const features = [
   },
   {
     name: 'Technical Integration with "George" Mobile App.',
-    description: 'Ensure that the integration wis aligned with the "George" overall design and performance standards.',
+    description: 'Ensure that the integration is aligned with the "George" overall design and performance standards.',
     icon: BoltIcon,
   },
   {
@@ -120,7 +120,7 @@ const tabs = [
       {
         name: 'UX Designer',
         description:
-          'As a UX Designer for the project, I crafted a user-friendly experience aligned with Ceska Sporitelna style guides, designed clear information architecture, curatied diverse content, mapped out seamless user journeys, and created interactive prototypes for testing and feedback.',
+          'As a UX Designer for the project, I crafted a user-friendly experience aligned with Ceska Sporitelna Style Guides, designed clear information architecture, curatied diverse content, mapped out seamless user journeys, and created interactive prototypes for testing and feedback.',
         imageSrc: design,
         imageAlt:
           'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
@@ -205,7 +205,7 @@ export default function Example() {
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Context</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-          Česká Spořitelna identified a need to enhance their mobile banking experience by providing a comprehensive financial advisory service. The aim was to empower users with personalized insights and tips to better manage their finances.
+          Česká Spořitelna identified a need to enhance their mobile banking experience by providing a comprehensive financial advisory service. The aim was to empower users with tools to better manage their finances. The solution, named "Financial Coach" along with the “Financial Health Test” and application “My Plans” (coming soon) offered personalized insights and tips based on clients individual needs and preferences.
           </dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -214,7 +214,7 @@ export default function Example() {
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Team</dt>
-          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Product Owner <br></br>Customer Journey Experts<br></br>Behavioural Experts<br></br>Data Analytics<br></br>Front-end Developer<br></br>Back-end Developer</dd>
+          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Product Owner <br></br>Customer Journey Experts<br></br>Behavioural Experts<br></br>Data Analytics<br></br>Front-end Developers<br></br>Back-end Developers</dd>
           
         </div>
   
@@ -345,28 +345,44 @@ export default function Example() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h1 className="text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Research</h1>
+          <h1 className="text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">User Research</h1>
           <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-gray-900 lg:max-w-none lg:grid-cols-2">
             <div>
               <p>
-              The survey revealed that many adults in the region faced challenges in building long-term financial reserves. One in six adults reported not saving for the long term, while even those who did save often fell short of sufficient amounts.
+              We embarked on a mission to design financial services that would make a real impact on users' financial well-being. My journey began with a deep dive into the survey results that analysed the financial reserve of a sample of 2003 people.
               </p>
-              <p className="mt-8">
-              Retirement planning was another concern, with the recommendation of CZK 2 million for a comfortable retirement. However, the research showed that achieving this goal was attainable through gradual monthly contributions.
+
+              <p className="mt-6 font-semibold">
+              The findings unveiled considerable challenges:</p>
+            
+              <p className="mt-3">
+              - about one in six adults don't build up any long-term financial reserves; </p>
+            
+              <p className="mt-1">
+              - one in three had minimal reserves;</p>
+
+              <p className="mt-1">
+              - more than half of the respondents found it challenging to manage their money effectively.
             </p>
-              <p className="mt-8">
-              One in three Czechs had minimal financial reserves, insufficient even to cover a month's expenses. Managing money effectively proved to be a common challenge, with over half of respondents struggling in this regard.
+              <p className="mt-6">
+              These insights emphasized the need to create financial service that prioritized financial literacy, savings, and effective money management. <br></br> <br></br> <span className="font-semibold">Our goal was clear:</span> to make a difference in the "Financial health" of our users.
               </p>
             </div>
             <div>
-              <p>
-              Examining the historical context, it became clear that the financial landscape had evolved, with two-thirds of Czech households previously able to build financial reserves. 
+              <p className="mt-0">
+              The survey provided valuable data, while user interviews offered deeper insights into our customers' experiences and needs. We designed scenarios with consistent and relevant questions.</p>
+              <p className="mt-6 font-semibold">
+               Sample questions included:</p>
+              
+              <p className="mt-3">
+              "Tell us about your short-term, and long-term financial goals and how you plan to achieve them."</p>
+              <p className="mt-3">
+"What are your thoughts on retirement planning, and do you feel confident in your approach?"</p>
+<p className="mt-3">
+"Can you share your experiences and struggles in managing your finances effectively?"
               </p>
               <p className="mt-8">
-              The survey's robust sample size of 2003 individuals offered a comprehensive representation of the financial challenges experienced by the Czech population. 
-              </p>
-              <p className="mt-8">
-              These insights guided the design process, emphasizing the urgency of creating financial services that promote financial literacy, savings, and effective money management. The goal was to empower users to navigate the complex financial terrain with confidence and resilience. By addressing the real-world financial challenges highlighted by the survey, our team aimed to make a tangible impact on the financial well-being of Czech users.
+              I had the opportunity to participate in user interviews, which offered me a fresh perspective and ideas on combining user-centric design with addressing real-world financial realities.
               </p>
             </div>
           </div>
@@ -427,7 +443,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Personalization.</strong> A brief questionnaire was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
+                  <strong className="font-semibold text-gray-900">Personalization.</strong> A questionnaire named "Financial Health Test" was provided to understand the user's financial priorities, such as savings, investing, or budgeting.
                 </span>
               </li>
               <li className="flex gap-x-3">
@@ -451,7 +467,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 <PlayIcon className="mt-1 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
                 <span>
-                  <strong className="font-semibold text-gray-900">Feedback Collection.</strong>Incorporating feedback mechanisms within the feature to collect user suggestions and identify areas for improvement.
+                  <strong className="font-semibold text-gray-900">Feedback Collection.</strong> Incorporating feedback mechanisms within the feature to collect user suggestions and identify areas for improvement.
                 </span>
               </li>
             </ul>
@@ -496,14 +512,29 @@ export default function Example() {
               <li className="flex gap-x-3">
             
                 <span>
-                  <strong className="font-semibold text-gray-900">The First Usability Session.</strong> We welcomed six respondents from diverse backgrounds at Ceska Sporitelna's UX Lab. The initial testing rounds provided us with 
-                  the insights and ideas. Users' interactions shed light on both the strengths and weaknesses of the feature.
+                  <strong className="font-semibold text-gray-900">Planning and Preparing for Testing.</strong> After we defined clear objectives and success criteria for our user testing sessions, we selected diverse user group to ensure representative feedback. I worked on a testing plan, by creating realistic test scenarios and prototypes.
+                  
                 </span>
               </li>
               <li className="flex gap-x-3">
+            
+                <span>
+                  <strong className="font-semibold text-gray-900">Conducting Initial Usability Testing. </strong> We invited six respondents from diverse backgrounds to our Usability Lab to participate in the initial usability testing phase, providing them with context and guidance. We observed and documented user interactions, noting usability issues and gathering valuable feedback.
+                  
+                </span>
+              </li>
+
+              <li className="flex gap-x-3">
+            
+            <span>
+              <strong className="font-semibold text-gray-900">Analyzing Results.</strong> By identifying common usability issues and prioritizing them, we created a roadmap for improvement.
+              
+            </span>
+          </li>
+              <li className="flex gap-x-3">
                 
                 <span>
-                  <strong className="font-semibold text-gray-900">Continuous Validation and Iteration.</strong> I continually iterated on the designs based on the feedback and observations gathered from the usability sessions. It became evident that this iterative approach was instrumental in refining the user experience.
+                  <strong className="font-semibold text-gray-900">Continuous Validation and Iteration.</strong> I iterated on the designs based on the feedback and observations gathered from the usability sessions. In a collaboration with the development team, I continued refining the feature based on the follow-up testing results.
                 </span>
               </li>
               <li className="flex gap-x-3">
@@ -518,7 +549,7 @@ export default function Example() {
               <li className="flex gap-x-3">
             
                 <span>
-                  <strong className="font-semibold text-gray-900">Applying feedback & improvements.</strong> Finally, after meticulously analyzing the feedback and conducting several iterations, we made significant refinements to the Financial Coach feature. These refinements addressed usability issues, improved the clarity of information, and ensured that the feature was genuinely user-centric.
+                  <strong className="font-semibold text-gray-900">Finalizing and Launching. </strong> With the feature refined to perfection, we prepared for a seamless launch. Post-launch, we monitored user feedback and engagement to ensure the feature's continued success and swiftly address any new issues.
 
 
                 </span>
