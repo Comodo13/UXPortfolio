@@ -26,7 +26,7 @@ import {
 import Image from 'next/image'
 import fink from '../../public/logos/finkk.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
-import fink3 from '../../public/logos/fink4.jpg'
+import fink3 from '../../public/logos/fink11.jpg'
 import research from '../../public/logos/research.jpg'
 import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
@@ -512,14 +512,14 @@ export default function Example() {
               <li className="flex gap-x-3">
             
                 <span>
-                  <strong className="font-semibold text-gray-900">Planning and Preparing for Testing.</strong> After we defined clear objectives and success criteria for our user testing sessions, we selected diverse user group to ensure representative feedback. I worked on a testing plan, by creating realistic test scenarios and prototypes.
+                  <strong className="font-semibold text-gray-900">Planning and Preparing for Testing.</strong> After we defined clear objectives and success criteria for usability testing, we selected diverse user group to ensure representative feedback. I worked on test scenarios, and created an interactive prototype for our usability session.
                   
                 </span>
               </li>
               <li className="flex gap-x-3">
             
                 <span>
-                  <strong className="font-semibold text-gray-900">Conducting Initial Usability Testing. </strong> We invited six respondents from diverse backgrounds to our Usability Lab to participate in the initial usability testing phase, providing them with context and guidance. We observed and documented user interactions, noting usability issues and gathering valuable feedback.
+                  <strong className="font-semibold text-gray-900">Conducting Initial Usability Testing. </strong> We invited six respondents from diverse backgrounds to Ceska Sporitelna UX Lab to participate in the initial usability testing phase, providing them with context and guidance. We observed and documented user interactions, noting usability issues and gathering valuable feedback.
                   
                 </span>
               </li>
@@ -540,7 +540,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 
                 <span>
-                  <strong className="font-semibold text-gray-900">Demo Testing with Ceska Sporitelna Employees.</strong> To gain more qualitative insights, we tested a demo version with Ceska Sporitelna employees who use George mobile banking. It revieled that some users struggled to grasp the functionality of the Financial Coach feature, leading us to adjust information and content for better clarity.
+                  <strong className="font-semibold text-gray-900">Demo Testing with Ceska Sporitelna Employees.</strong> To gain more qualitative insights, we tested a demo version of "Financial Coach" feature with Ceska Sporitelna employees who use George mobile banking. It revealed that some of them had difficulties in comprehending the functionality of this service, leading us to adjust information and content for better clarity.
                 </span>
               </li>
 
@@ -577,12 +577,12 @@ export default function Example() {
           <Image
             src={fink3}
             alt="App screenshot"
-            className="mb-[-12%] rounded-xl"
+            className="rounded-xl"
             width={2432}
             height={1442}
           />
           <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t " />
           </div>
         </div>
       </div>
