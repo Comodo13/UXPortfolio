@@ -540,7 +540,7 @@ export default function Example() {
               <li className="flex gap-x-3">
                 
                 <span>
-                  <strong className="font-semibold text-gray-900">Demo Testing with Ceska Sporitelna Employees.</strong> To gain more qualitative insights, we tested a demo version of "Financial Coach" feature with Ceska Sporitelna employees who use George mobile banking. It revealed that some of them had difficulties in comprehending the functionality of this service, leading us to adjust information and content for better clarity.
+                  <strong className="font-semibold text-gray-900">Demo Testing with Ceska Sporitelna Employees.</strong> To gain more quantitative insights, we tested a demo version of "Financial Coach" feature with Ceska Sporitelna employees who use George mobile banking. It revealed that some of them had difficulties in comprehending the functionality of this service, leading us to adjust information and content for better clarity.
                 </span>
               </li>
 
