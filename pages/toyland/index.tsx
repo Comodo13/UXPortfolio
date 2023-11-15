@@ -52,8 +52,8 @@ import {
       <div className="bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-        <h2 className="text-xl font-semibold leading-7 text-fuchsia-900">E-commerce Website Redesign</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">How we managed to Increase Direct Traffic and Conversions by 38%</p>
+        <h2 className="text-2xl font-semibold leading-7 text-amber-700">E-commerce Website Redesign</h2>
+            <p className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">How we managed to Increase Direct Traffic and Conversions by 38%</p>
             
         </div>
        </div>
