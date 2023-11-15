@@ -49,7 +49,17 @@ const people = [
 export default function Example() {
   return (
     <div className="bg-white py-24 md:py-32 lg:py-40">
+
+
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+
+      <a href="/toyland" className="mt-8 inline-block rounded-lg bg-orange-800 py-3 px-8 text-base font-body font-medium text-white hover:bg-aqua-opacity-5">
+                    toyland
+                    </a>
+
+                    <a href="/cs" className="mt-8 inline-block rounded-lg bg-blue-500 py-3 px-8 text-base font-body font-medium text-white hover:bg-aqua-opacity-5">
+                    Sporka
+                    </a>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
