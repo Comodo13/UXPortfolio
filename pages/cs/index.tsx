@@ -32,6 +32,7 @@ import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
 import expert from '../../public/logos/uxexpert.jpg'
 import test from '../../public/logos/fink5.jpg'
+import opportunity from '../../public/logos/opportunity.jpg'
 import statistic from '../../public/logos/statistic.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
@@ -120,7 +121,7 @@ const tabs = [
       {
         name: 'UX Designer',
         description:
-          'As a UX Designer for the project, I crafted a user-friendly experience aligned with Ceska Sporitelna Style Guides, designed clear information architecture, curatied diverse content, mapped out seamless user journeys, and created interactive prototypes for testing and feedback.',
+          'As a UX Designer for this project, I crafted a user-friendly experience aligned with Ceska Sporitelna Style Guides, designed clear information architecture, curatied diverse content, mapped out seamless user journeys, and created interactive prototypes for testing and feedback.',
         imageSrc: design,
         imageAlt:
           'Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.',
@@ -214,7 +215,7 @@ export default function Example() {
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Team</dt>
-          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Product Owner <br></br>Customer Journey Experts<br></br>Behavioural Experts<br></br>Data Analytics<br></br>Front-end Developers<br></br>Back-end Developers</dd>
+          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Product Owner <br></br>Customer Journey Expert<br></br>Behavioural Expert<br></br>Data Analytic<br></br>Front-end Developer<br></br>Back-end Developer</dd>
           
         </div>
   
@@ -409,6 +410,12 @@ export default function Example() {
 
 
 
+
+
+
+
+
+
     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
       <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div className="lg:pr-4">
@@ -416,6 +423,9 @@ export default function Example() {
     
             <h1 className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Onboarding</h1>
             <p className="mt-6 text-lg leading-6 text-gray-700 ">
+            Based on the insights gathered from user research, as well as a couple of business and tech interviews, we conducted several sessions with our team members to map out various solutions for addressing the issues we have identified during the discovery process.
+            </p>
+            <p className="mt-8 text-lg leading-6 text-gray-700 ">
             One of the crucial part for the Financial Health Project was designing Onboarding experience. We had to consider different needs and expectations of the user groups, and ensure that users feel comfortable and informed as they begin their journey to improve their financial literacy. 
             </p>
           </div>
@@ -471,11 +481,7 @@ export default function Example() {
                 </span>
               </li>
             </ul>
-            <p className="mt-8">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-              fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-              adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-            </p>
+            
             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
             <p className="mt-6">
               Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
@@ -527,7 +533,7 @@ export default function Example() {
               <li className="flex gap-x-3">
             
             <span>
-              <strong className="font-semibold text-gray-900">Analyzing Results.</strong> By identifying common usability issues and prioritizing them, we created a roadmap for improvement.
+              <strong className="font-semibold text-gray-900">Analyzing Results.</strong> Based on a feedback collected from our users, I had a couple of sessions with our Product Owner and other team members so that we can prioritize common usability issues and create a roadmap for improvement.
               
             </span>
           </li>
@@ -558,18 +564,19 @@ export default function Example() {
             
               </ul>
            
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-              <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
-                Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
-              </p>
+             
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+    <div className="mx-auto max-w-2xl sm:text-center">
+        
+          <p className="mt-2 mb-4 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">Final Screens</p>
+       
+        </div>
 
 
     <div className="relative overflow-hidden pt-8">
