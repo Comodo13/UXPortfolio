@@ -168,13 +168,13 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Clients Financial Health  </p>
-          <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
-          Designing Financial Advisory Services for mobile banking "George",<br></br> with over 2 million daily active users.
-          </p>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Clients Financial Health  </p>
+            <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
+             Designing Financial Advisory Services for mobile banking "George",<br></br> with over 2 million daily active users.
+            </p>
         </div>
-      </div>
-      <div className="relative overflow-hidden pt-8">
+       </div>
+         <div className="relative overflow-hidden pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <Image
             src={fink}
@@ -188,6 +188,7 @@ export default function Example() {
           </div>
         </div>
       </div>
+
       <div className="mx-auto mt-16 max-w-4xl px-6 sm:mt-20 md:mt-24 lg:px-8">
       <div>
     <div className="px-4 sm:px-0">
