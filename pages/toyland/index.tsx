@@ -25,7 +25,7 @@ import {
   
   
   import Image from 'next/image'
-  import toyland from '../../public/logos/toyland.jpg'
+  import toyland from '../../public/logos/toyland3.jpg'
   import fink2 from '../../public/logos/fink2.jpg'
   import fink3 from '../../public/logos/fink11.jpg'
   import research from '../../public/logos/research.jpg'
@@ -50,21 +50,21 @@ import {
   
   export default function Example() {
     return (
-      <div className="bg-white py-12 sm:py-24">
+      <div className="bg-sky-200 py-12 sm:py-24">
       <div className="mx-auto max-w-8xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl sm:text-center">
         
-            <p className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">How we increased Direct Traffic and Conversions by 38% with a Website Redesign </p>
+            <p className="mt-2 text-xl font-bold tracking-tight text-gray-800 sm:text-4xl">How we increased Direct Traffic and Conversions by 38% with a Website Redesign </p>
             
         </div>
        </div>
          <div className="relative overflow-hidden pt-8">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-8xl px-6 lg:px-8">
           <Image
             src={toyland}
             alt="App screenshot"
-            className="rounded-2xl"
-            width={2432}
+            className=""
+            width={4000}
             height={1442}
           />
           <div className="relative" aria-hidden="true">
@@ -84,49 +84,48 @@ import {
 
       <div className="bg-white px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-        <p className="text-base font-semibold leading-7 text-indigo-600">Introducing</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">JavaScript for Beginners</h1>
-        <p className="mt-6 text-xl leading-8">
-          Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-          aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend
-          egestas fringilla sapien.
+        
+        <h1 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Background</h1>
+        <p className="mt-6 text-lg leading-8">
+          
+Toyland is a chain of ukrainian offline toy stores. At the beginning of 2021, the Toyland team contacted us to audit the website and based on the data obtained, improve the effectiveness of marketing activities. We began to study the audience and analytics data.
         </p>
         <div className="mt-10 max-w-2xl">
-          <p>
-            Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-            sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-            Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-            sed turpis id.
+        <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Goals</h2>
+<ul role="list" className="mt-6 max-w-2xl space-y-4 text-gray-600 list-disc pl-5">
+  <li>
+    <strong className="font-semibold text-lg text-gray-900">Redesign of the initial website</strong>
+  </li>
+
+  <li>
+    <strong className="font-semibold  text-lg text-gray-900">Improvement of the conversions from Google Shopping campaigns</strong>
+  </li>
+  <li>
+    <strong className="font-semibold  text-lg text-gray-900">Increase customer lifetime value</strong> 
+  </li>
+</ul>
+
+<h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Previous Version Of The Website</h2>
+          <p className="mt-8 text-lg">
+          According to Google Analytics, 80% of the website traffic came from Google Shopping ads that lead to a specific product page. At the same time, 75% of users visited the website from mobile devices. Direct traffic share was 4%, which became the second most effective among other channels. Thus, users landed on the main page or catalog page.
           </p>
-          <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li className="flex gap-x-3">
-              <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span>
-                <strong className="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                blanditiis ratione.
-              </span>
-            </li>
-            <li className="flex gap-x-3">
-              <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span>
-                <strong className="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad non
-                deserunt sunt. Qui irure qui lorem cupidatat commodo.
-              </span>
-            </li>
-            <li className="flex gap-x-3">
-              <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span>
-                <strong className="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat
-                auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </span>
-            </li>
-          </ul>
-          <p className="mt-8">
-            Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-            fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-            adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">The issues we found</h2>
+<ul role="list" className="mt-6 max-w-2xl space-y-4 text-gray-600 list-disc pl-5">
+  <li>
+    <strong className="font-normal text-lg text-gray-900">Many users ended sessions quickly because they didn’t understand the purpose of the service confusing it with an online store</strong>
+  </li>
+
+  <li>
+    <strong className="font-normal  text-lg text-gray-900">There were no tools for encouraging loyal users</strong>
+  </li>
+  <li>
+    <strong className="font-normal  text-lg text-gray-900">On the product page, the secondary elements attracted more attention than the CTA button</strong> 
+  </li>
+  <li>
+    <strong className="font-normal text-lg text-gray-900">The visual focus on the main page was moved to a bright design from the products</strong> 
+  </li>
+</ul>
+          
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">From beginner to expert in 3 hours</h2>
           <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
