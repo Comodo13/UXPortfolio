@@ -50,10 +50,10 @@ import {
   export default function Example() {
     return (
       <div className="bg-white py-12 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl sm:text-center">
-        <h2 className="text-2xl font-semibold leading-7 text-amber-700">E-commerce Website Redesign</h2>
-            <p className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">How we managed to Increase Direct Traffic and Conversions by 38%</p>
+      <div className="mx-auto max-w-8xl px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl sm:text-center">
+        
+            <p className="mt-2 text-xl font-bold tracking-tight text-gray-700 sm:text-4xl">How we increased Direct Traffic and Conversions by 38% with a Website Redesign </p>
             
         </div>
        </div>
