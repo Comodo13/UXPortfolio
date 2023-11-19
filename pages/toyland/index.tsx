@@ -94,14 +94,14 @@ Toyland is a chain of ukrainian offline toy stores. At the beginning of 2021, th
       <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Goals</h2>
 <ul role="list" className="mt-6 max-w-2xl space-y-4 text-gray-600 list-disc pl-5">
 <li>
-  <strong className="font-semibold text-lg text-gray-900">Redesign of the initial website</strong>
+  <strong className="font-medium text-lg text-gray-900">Redesign of the initial website</strong>
 </li>
 
 <li>
-  <strong className="font-semibold  text-lg text-gray-900">Improvement of the conversions from Google Shopping campaigns</strong>
+  <strong className="font-medium  text-lg text-gray-900">Improvement of the conversions from Google Shopping campaigns</strong>
 </li>
 <li>
-  <strong className="font-semibold  text-lg text-gray-900">Increase customer lifetime value</strong> 
+  <strong className="font-medium  text-lg text-gray-900">Increase customer lifetime value</strong> 
 </li>
 </ul>
 
@@ -110,20 +110,24 @@ Toyland is a chain of ukrainian offline toy stores. At the beginning of 2021, th
         According to Google Analytics, 80% of the website traffic came from Google Shopping ads that lead to a specific product page. At the same time, 75% of users visited the website from mobile devices. Direct traffic share was 4%, which became the second most effective among other channels. Thus, users landed on the main page or catalog page.
         </p>
         <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">The issues we found</h2>
-<ul role="list" className="mt-6 max-w-2xl space-y-4 text-gray-600 list-disc pl-5">
+<ul role="list" className="mt-4 max-w-2xl space-y-4 text-gray-900 list-disc pl-5">
 <li>
-  <strong className="font-normal text-lg text-gray-900">Many users ended sessions quickly because they didn’t understand the purpose of the service confusing it with an online store</strong>
+  <strong className="font-normal text-lg text-gray-900">The visual focus on the main page was moved to a bright design from the products</strong>
 </li>
 
 <li>
-  <strong className="font-normal  text-lg text-gray-900">There were no tools for encouraging loyal users</strong>
+  <strong className="font-normal  text-lg text-gray-800">There were no tools for encouraging loyal users</strong>
 </li>
 <li>
-  <strong className="font-normal  text-lg text-gray-900">On the product page, the secondary elements attracted more attention than the CTA button</strong> 
+  <strong className="font-normal  text-lg text-gray-800">On the product page, the secondary elements attracted more attention than the CTA button</strong> 
 </li>
 <li>
-  <strong className="font-normal text-lg text-gray-900">The visual focus on the main page was moved to a bright design from the products</strong> 
+  <strong className="font-normal text-lg text-gray-800">Many users ended sessions quickly because the initial website wasn't engaging enough</strong> 
 </li>
+<li>
+  <strong className="font-normal text-lg text-gray-800">The old version of the website had suffered from severe accessibility issues</strong> 
+</li>
+
 </ul>
         
         <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">From beginner to expert in 3 hours</h2>
