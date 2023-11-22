@@ -34,6 +34,7 @@ import stats from '../../public/logos/stats.jpg'
 import expert from '../../public/logos/uxexpert.jpg'
 import test from '../../public/logos/fink5.jpg'
 import statistic from '../../public/logos/statistic.jpg'
+import issues from '../../public/logos/issues.jpg'
 import { PaperClipIcon } from '@heroicons/react/24/solid'
 
 import { Fragment } from 'react'
@@ -127,7 +128,17 @@ Toyland is a chain of ukrainian offline toy stores. At the beginning of 2021, th
 <li>
   <strong className="font-normal text-lg text-gray-800">The old version of the website had suffered from severe accessibility issues</strong> 
 </li>
-
+ <figure className="mt-16">
+        <Image
+          className="aspect-video rounded-xl bg-gray-50 object-cover"
+          src={issues}
+          alt=""
+        />
+        <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
+          <InformationCircleIcon className="mt-0.5 h-5 w-5 flex-none text-gray-300" aria-hidden="true" />
+          Faucibus commodo massa rhoncus, volutpat.
+        </figcaption>
+      </figure> 
 </ul>
         
         <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">From beginner to expert in 3 hours</h2>
@@ -161,17 +172,7 @@ Toyland is a chain of ukrainian offline toy stores. At the beginning of 2021, th
           sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
         </p>
       </div>
-      <figure className="mt-16">
-        <img
-          className="aspect-video rounded-xl bg-gray-50 object-cover"
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
-          alt=""
-        />
-        <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
-          <InformationCircleIcon className="mt-0.5 h-5 w-5 flex-none text-gray-300" aria-hidden="true" />
-          Faucibus commodo massa rhoncus, volutpat.
-        </figcaption>
-      </figure>
+     
       <div className="mt-16 max-w-2xl">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">Everything you need to get up and running</h2>
         <p className="mt-6">
