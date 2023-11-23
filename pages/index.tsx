@@ -49,19 +49,43 @@ import About from '../components/Portfolio/About'
 import { Fragment } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { FaLinkedin, FaYoutube } from 'react-icons/fa'
+import { IoIosMailOpen } from "react-icons/io";
 
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 const navigation = [
-  { name: 'about', href: '#' },
-  { name: 'work', href: '#' },
+  { name: 'ABOUT', href: '#' },
+  { name: 'WORK', href: '#' },
 ]
 
 
 
-
+const navigation1 = {
+  main: [
+    //{ name: 'Главная', href: '/' },
+    { name: 'Специалисты', href: '/team' },
+    { name: 'Услуги', href: '/services' },
+    //{ name: 'Новости', href: '/blog' },
+    { name: 'О нас', href: '/about' },
+    { name: 'Контакты', href: '/contacts' },
+    
+  ],
+  social: [
+    {
+      name: 'Linkedin',
+      href: '#',
+      icon: <FaLinkedin size={42} />
+    },
+    {
+      name: 'Mail',
+      href: '',
+     icon: <IoIosMailOpen size={42} />
+    },
+  ]
+}
 
 const Home: NextPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -72,7 +96,7 @@ const Home: NextPage = () => {
     
     <div className="bg-gray-900">
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav className="flex items-center fixed ml-0 sm:ml-60 justify-between bg-warm-Gray-900  p-6 lg:px-8" aria-label="Global">
+      <nav className="flex items-center fixed ml-0 sm:ml-7 justify-between bg-warm-Gray-900  p-6 lg:px-4" aria-label="Global">
     
   <div className="flex lg:hidden">
     <button
@@ -137,22 +161,17 @@ const Home: NextPage = () => {
   height={816}
   className="fixed inset-0 -z-10 h-full w-full object-cover"
 />
-<div
-  className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-  aria-hidden="true"
->
-  
-</div>
-<div className="ml-8 sm:ml-64 max-w-xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
+
+<div className="ml-8 sm:ml-64 max-w-xl pt-24 sm:py-48 lg:py-48 lg:mb-36">
   <div className="hidden sm:mb-8 sm:flex lg:justify-left sm:justify-left">
    
   </div>
   <div className="text-left ">
-    <h1 className="font-body font-regular text-white sm:text-6xl">
-      Hi, I'm Maria.
+    <h1 className="font-body font-regular text-gray-300 sm:text-6xl">
+      Hi, I'm Maria
     </h1>
-    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
-      A <span className="font-thin text-amber-500">Product Designer</span> located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
+    <p className="mt-4 font-body font-thin pb-32 text-4xl leading-8 text-amber-50">
+      A <span className="font-thin text-amber-500">Product Designer</span> based in Prague, <br></br> driven by a passion for crafting visually appealing, yet functional, interfaces.
     </p>
     
   </div>
@@ -163,12 +182,31 @@ const Home: NextPage = () => {
    
   </div>
   <div className="text-left">
-  <h1 className="font-body font-regular text-white sm:text-6xl">
+  <h1 className="font-body font-regular text-gray-300 sm:text-5xl">
       How can I help you?
     </h1>
-    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
-     A <strong className=" text-orange-900">Product Designer </strong> located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
-    </p>
+    
+    <ul role="list" className="mt-7 max-w-2xl space-y-3">
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">UX STRATEGY</strong>
+</li>
+
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">COMPETITIVE ANALYSES & USER RESEARCH</strong>
+</li>
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-100">WIREFRAMES & IA</strong> 
+</li>
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-100">UX/UI DESIGN</strong> 
+</li>
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-200">PROTOTYPING & TESTING</strong> 
+</li>
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-200">DESIGN SYSTEMS</strong> 
+</li>
+</ul>
     
   </div>
 </div>
@@ -179,13 +217,20 @@ const Home: NextPage = () => {
    
   </div>
   <div className="text-left">
-  <h1 className="font-body font-regular text-white sm:text-6xl">
+  <h1 className="font-body font-regular text-gray-300 sm:text-5xl">
       Contact
     </h1>
-    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
-      A Product Designer located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
+    <p className="mt-6 font-body font-thin pb-8 text-4xl leading-8 text-amber-50">
+    <span className="font-thin text-amber-500">Interested in collaboration?</span><br></br>Drop me a line! 
     </p>
-    
+    <div className="mt-10 flex justify-left items-center space-x-10">
+          {navigation1.social.map((item, index) => (
+            <a key={index} href={item.href} className="text-gray-400 hover:text-amber-500 font-semibold ">
+              <span className="sr-only">{item.name}</span>
+              {item.icon}
+            </a>
+          ))}
+        </div>
   </div>
 </div>
 

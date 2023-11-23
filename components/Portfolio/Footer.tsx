@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaFacebook, FaInstagram, FaYoutube  } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaYoutube  } from 'react-icons/fa'; 
 const navigation = {
   main: [
     //{ name: 'Главная', href: '/' },
@@ -13,9 +13,9 @@ const navigation = {
   ],
   social: [
     {
-      name: 'Facebook',
+      name: 'Linkedin',
       href: '#',
-      icon: <FaFacebook size={24} />
+      icon: <FaLinkedin size={32} />,
     },
     {
       name: 'Instagram',
