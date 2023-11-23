@@ -30,6 +30,10 @@ module.exports = {
       fontSize: {
         xxs: '0.5rem'
       },
+      fontFamily: {
+        heading: ['Genos'],
+      //  body: ['Quicksand']
+      },
       keyframes: {
         flipTop: {
           '0%': { transform: 'rotateX(0deg)' },
