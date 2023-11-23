@@ -51,11 +51,18 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   return (
-    <div className="bg-sky-200 py-12 sm:py-24">
+    <div className="bg-white py-12 sm:py-24">
     <div className="mx-auto max-w-8xl px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl sm:text-center">
+
       
-          <p className="mt-2 text-xl font-bold tracking-tight text-gray-800 sm:text-4xl">How we increased Direct Traffic and Conversions by 38% with a Website Redesign </p>
+      <div className="mx-auto max-w-3xl sm:text-center">
+
+      <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">E-Commerce Website Redesign</p>
+            <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
+            How we increased Direct Traffic and Conversions by 38% with a Website Redesign
+            </p>
+      
+          
           
       </div>
      </div>

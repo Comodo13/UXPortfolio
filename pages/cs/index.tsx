@@ -196,7 +196,7 @@ export default function Example() {
     <div className="mt-6 border-t border-gray-100">
       <dl className="divide-y divide-gray-100">
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-lg font-medium leading-6 text-gray-900">Name</dt>
+          <dt className="text-lg font-medium leading-6 text-gray-900">Project Name</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Financial Health Zone</dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">

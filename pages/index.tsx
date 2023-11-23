@@ -86,7 +86,7 @@ const Home: NextPage = () => {
   </div>
   <div className="hidden lg:flex lg:gap-x-12">
     {navigation.map((item) => (
-      <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+      <a key={item.name} href={item.href} className="font-body text-2xl leading-6  hover:text-amber-500 text-white">
         {item.name}
       </a>
     ))}
@@ -121,12 +121,7 @@ const Home: NextPage = () => {
           ))}
         </div>
         <div className="py-6">
-          <a
-            href="#"
-            className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-          >
-            Log in
-          </a>
+          
         </div>
       </div>
     </div>
@@ -148,46 +143,46 @@ const Home: NextPage = () => {
 >
   
 </div>
-<div className="ml-8 sm:ml-64 max-w-2xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
+<div className="ml-8 sm:ml-64 max-w-xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
   <div className="hidden sm:mb-8 sm:flex lg:justify-left sm:justify-left">
    
   </div>
-  <div className="text-left">
-    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+  <div className="text-left ">
+    <h1 className="font-body font-regular text-white sm:text-6xl">
       Hi, I'm Maria.
     </h1>
-    <p className="mt-6 pb-32text-lg leading-8 text-gray-300">
-      A Product Designer located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
+    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
+      A <span className="font-thin text-amber-500">Product Designer</span> located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
     </p>
     
   </div>
 </div>
 
-<div className="ml-8 sm:ml-64 max-w-2xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
+<div className="ml-8 sm:ml-64 max-w-xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
   <div className="hidden sm:mb-8 sm:flex lg:justify-left sm:justify-left">
    
   </div>
   <div className="text-left">
-    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+  <h1 className="font-body font-regular text-white sm:text-6xl">
       How can I help you?
     </h1>
-    <p className="mt-6 pb-32text-lg leading-8 text-gray-300">
-      A Product Designer located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
+    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
+     A <strong className=" text-orange-900">Product Designer </strong> located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
     </p>
     
   </div>
 </div>
 
 
-<div className="ml-8 sm:ml-64 max-w-2xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
+<div className="ml-8 sm:ml-64 max-w-xl pt-32 sm:py-48 lg:py-48 lg:mb-36">
   <div className="hidden sm:mb-8 sm:flex lg:justify-left sm:justify-left">
    
   </div>
   <div className="text-left">
-    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+  <h1 className="font-body font-regular text-white sm:text-6xl">
       Contact
     </h1>
-    <p className="mt-6 pb-32text-lg leading-8 text-gray-300">
+    <p className="mt-6 font-body font-thin pb-32 text-4xl leading-8 text-gray-300">
       A Product Designer located in Prague, driven by a passion for crafting visually appealing yet functional interfaces.
     </p>
     

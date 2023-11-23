@@ -6,6 +6,10 @@ module.exports = {
     letterSpacing: {
       widest: '0.4em'
     },
+    fontFamily: {
+      body: ['Genos'],
+    //  body: ['Quicksand']
+    },
     screens: {
       sm: '450px',
       md: '768px',
@@ -31,7 +35,7 @@ module.exports = {
         xxs: '0.5rem'
       },
       fontFamily: {
-        heading: ['Genos'],
+        heading: ['Genos', 'sans-serif'],
       //  body: ['Quicksand']
       },
       keyframes: {
