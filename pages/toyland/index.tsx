@@ -23,6 +23,8 @@ import {
   FaceFrownIcon,
 } from '@heroicons/react/24/outline'
 
+import { FaFacebook, FaInstagram, FaYoutube  } from 'react-icons/fa';
+
 
 import Image from 'next/image'
 import toyland from '../../public/logos/toyland3.jpg'
