@@ -25,7 +25,7 @@ module.exports = {
         theme_darkDesaturatedBlue: 'hsl(236, 21%, 26%)',
         theme_veryDarkBlue: 'hsl(235, 16%, 14%)',
         theme_veryDarkMostlyBlackBlue: 'hsl(234, 17%, 12%)',
-        main_gray: 'hsl(0, 0% 17%)'
+        main_gray: 'hsl(0, 1% 14%)'
       },
       fontSize: {
         xxs: '0.5rem'
