@@ -24,7 +24,7 @@ import {
 
 
 import Image from 'next/image'
-import fink from '../../public/logos/finkk.jpg'
+import fink from '../../public/logos/finko.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
 import fink3 from '../../public/logos/fink11.jpg'
 import research from '../../public/logos/research.jpg'
@@ -167,7 +167,6 @@ export default function Example() {
     <div className="bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-xl font-semibold leading-7 text-blue-600">Česká Spořitelna</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">Clients Financial Health  </p>
             <p className="mt-6 text-xl fint-semibold leading-6 text-gray-700">
              Designing Financial Advisory Services for mobile banking "George",<br></br> with over 2 million daily active users.
@@ -197,11 +196,11 @@ export default function Example() {
     <div className="mt-6 border-t border-gray-100">
       <dl className="divide-y divide-gray-100">
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-lg font-medium leading-6 text-gray-900">Project Name</dt>
+          <dt className="text-lg font-medium leading-6 text-gray-900">Name</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Financial Health Zone</dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-lg font-medium leading-6 text-gray-900">Project Duration</dt>
+          <dt className="text-lg font-medium leading-6 text-gray-900">Duration</dt>
           <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">December 2022 - September 2023</dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
