@@ -188,20 +188,20 @@ const Home: NextPage = () => {
     
     <ul role="list" className="mt-7 max-w-2xl space-y-3">
 <li>
-  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">UX STRATEGY</strong>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">PRODUCT STRATEGY</strong>
 </li>
 
 <li>
-  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">COMPETITIVE ANALYSES & USER RESEARCH</strong>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-50">UX/UI DESIGN</strong>
+</li>
+<li>
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-100">COMPETITIVE ANALYSES & USER RESEARCH</strong> 
 </li>
 <li>
   <strong className="font-body font-thin text-3xl leading-8 text-amber-100">WIREFRAMES & IA</strong> 
 </li>
 <li>
-  <strong className="font-body font-thin text-3xl leading-8 text-amber-100">UX/UI DESIGN</strong> 
-</li>
-<li>
-  <strong className="font-body font-thin text-3xl leading-8 text-amber-200">PROTOTYPING & TESTING</strong> 
+  <strong className="font-body font-thin text-3xl leading-8 text-amber-200">PROTOTYPES & TESTING</strong> 
 </li>
 <li>
   <strong className="font-body font-thin text-3xl leading-8 text-amber-200">DESIGN SYSTEMS</strong> 
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
     </p>
     <div className="mt-10 flex justify-left items-center space-x-10">
           {navigation1.social.map((item, index) => (
-            <a key={index} href={item.href} className="text-amber-50 text-opacity-60 hover:text-amber-500 font-semibold ">
+            <a key={index} href={item.href} className="text-amber-50 text-opacity-60 hover:text-amber-600 font-semibold ">
               <span className="sr-only">{item.name}</span>
               {item.icon}
             </a>
