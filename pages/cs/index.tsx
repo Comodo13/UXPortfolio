@@ -26,7 +26,7 @@ import {
 import Image from 'next/image'
 import fink from '../../public/logos/finko.jpg'
 import fink2 from '../../public/logos/fink2.jpg'
-import fink3 from '../../public/logos/fink11.jpg'
+import fink3 from '../../public/logos/fink111.jpg'
 import research from '../../public/logos/research.jpg'
 import design from '../../public/logos/design.jpg'
 import stats from '../../public/logos/stats.jpg'
@@ -178,12 +178,12 @@ export default function Example() {
           <Image
             src={fink}
             alt="App screenshot"
-            className="mb-[-12%] rounded-xl"
+            className=" rounded-xl"
             width={2432}
             height={1442}
           />
           <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+            <div className="absolute bottom-0 " />
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@ export default function Example() {
       <dl className="divide-y divide-gray-100">
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Project Name</dt>
-          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Financial Health Zone</dd>
+          <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">FIT Zone</dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-lg font-medium leading-6 text-gray-900">Duration</dt>

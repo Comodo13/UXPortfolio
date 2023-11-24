@@ -110,7 +110,7 @@ const Home: NextPage = () => {
   </div>
   <div className="hidden lg:flex lg:gap-x-12">
     {navigation.map((item) => (
-      <a key={item.name} href={item.href} className="font-body text-2xl leading-6  hover:text-amber-500 text-white">
+      <a key={item.name} href={item.href} className="font-body text-2xl leading-6  hover:text-amber-500 text-amber-50">
         {item.name}
       </a>
     ))}
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
 </nav>
 <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
   <div className="fixed inset-0 z-50" />
-  <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+  <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-main_gray px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
     <div className="flex items-center justify-between">
       
       <button
@@ -221,11 +221,11 @@ const Home: NextPage = () => {
       Contact
     </h1>
     <p className="mt-6 font-body font-thin pb-8 text-4xl leading-8 text-amber-50">
-    <span className="font-thin text-amber-500">Interested in collaboration?</span><br></br>Drop me a line! 
+    Interested in collaboration?<br></br> Drop me a line! 
     </p>
     <div className="mt-10 flex justify-left items-center space-x-10">
           {navigation1.social.map((item, index) => (
-            <a key={index} href={item.href} className="text-gray-400 hover:text-amber-500 font-semibold ">
+            <a key={index} href={item.href} className="text-amber-50 text-opacity-60 hover:text-amber-500 font-semibold ">
               <span className="sr-only">{item.name}</span>
               {item.icon}
             </a>
